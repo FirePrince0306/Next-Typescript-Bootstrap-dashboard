@@ -22,7 +22,7 @@ export type SidebarProps = {
     handleToggleSidebar?: () => void;
 };
 
-const Sidebar = ({ collapsed, toggled, handleToggleSidebar }: SidebarProps) => {
+const Sidebar: React.FC<SidebarProps>  = ({ collapsed, toggled, handleToggleSidebar }) => {
     const router = useRouter();
 
     return (

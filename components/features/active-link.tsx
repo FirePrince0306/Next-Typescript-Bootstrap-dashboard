@@ -7,7 +7,7 @@ export type activeProps = PropsWithChildren<{
     path ?: string;
 }>;
 
-const ActiveLink = ({ path, children }: activeProps) => {
+const ActiveLink: React.FC<activeProps> = ({ path, children }) => {
     const router = useRouter();
     const className = router.asPath === `/${path}` ? "active" : '';
     return (

@@ -66,6 +66,13 @@ body {
     line-height: 1.5rem;
 }
 
+.label {
+    color: $sidebar-color;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+
 .text-basic {
     color: #414D6A;
 }
@@ -76,6 +83,10 @@ body {
 
 .text-danger {
     color: $text-danger-color !important;
+}
+
+.text-warning {
+    color: #ffb94d;
 }
 
 .size-xl-medium {
@@ -90,6 +101,12 @@ body {
     border-width: .0625rem  ;
     text-transform: uppercase;
 
+    &.size-xl-large {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        padding: .8125rem 1.125rem;
+    }
+
     &.size-xl-medium {
         font-size: .875rem;
         line-height: 1rem;
@@ -100,6 +117,17 @@ body {
         font-size: .625rem;
         line-height: .75rem;
         padding: .3125rem .625rem;
+    }
+
+    &.status-control {
+        background-color: #fbfdff;
+        border-color: #fbfdff;
+        color: #414D6A;
+    }
+
+    &.status-control:hover {
+        background-color: #f3f6f9;
+        border-color: #f3f6f9;
     }
 }
 
@@ -117,6 +145,12 @@ body {
         background-color: rgba(255, 61, 113, 0.08);;
         border-color: rgb(239 100 84);
         color: rgb(239 100 84);
+
+        &:hover {
+            background-color: rgba(255, 61, 113, 0.16);
+            border-color: #ef6454;
+            color: #ef6454;
+        }
     }
 }
 
@@ -296,4 +330,26 @@ body {
 
 .pro-sidebar.collapsed .pro-menu > ul > .pro-menu-item.pro-sub-menu > .pro-inner-list-item > .popper-inner {
     padding: 0 10px;
+}
+
+@media (max-width: 992px) {
+    .pro-sidebar.lg.collapsed {
+        left: -93px;
+    }
+
+    .pro-sidebar.lg {
+        left: 0;
+    }
+
+    .pro-sidebar.lg .overlay {
+        display: block;
+    }
+
+    .pro-sidebar.lg.toggled .overlay {
+        display: none;
+    }
+
+    .pro-sidebar.lg.toggled {
+        left: -270px;
+    }
 }

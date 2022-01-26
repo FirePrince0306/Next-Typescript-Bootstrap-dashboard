@@ -2,6 +2,8 @@ import { IoNavigate } from 'react-icons/io5';
 import { GoAlert } from 'react-icons/go';
 
 import { Trip, VehicleTripStatus } from "~/components/features/common";
+import { TripsService } from '~/components/utils/trips.service';
+
 import VehiclePopOver from '~/pages/dashboard/vehicle-popover';
 
 export type VehicleProps = {
@@ -10,10 +12,14 @@ export type VehicleProps = {
     selected: boolean;
     id: number;
     handleActiveVehicleId: (id: number) => void;
-    handleCurrentVehicle: (vehicle: Trip) => void;
+    handleCurrentVehicle: (vehicle: Trip | null) => void;
+    handleMarkers: (markers: any) => void;
 };
 
-const VehicleCard = ({trip, selected, handleActiveVehicleId, handleCurrentVehicle, id}: VehicleProps) => {
+const VehicleCard: React.FC<VehicleProps> = ({trip, selected, handleActiveVehicleId, handleCurrentVehicle, handleMarkers, id}) => {
+    const MyTripsService:TripsService = new TripsService();
+	let tempMarkers = MyTripsService.getMarkersData();
+
     function getImageSource(): any {
         switch (trip.vehicleInTripStatus) {
         case VehicleTripStatus.BROKEN:
@@ -29,7 +35,14 @@ const VehicleCard = ({trip, selected, handleActiveVehicleId, handleCurrentVehicl
         <>
             <div className={`vehicle-card d-flex py-3 ${selected ? 'selected-vehicle-bg' : ''}`}
                 onClick={()=> {
-                    selected ? handleActiveVehicleId(-1) : handleActiveVehicleId(id), handleCurrentVehicle(trip)
+                    selected ? ( handleActiveVehicleId(-1), handleCurrentVehicle(null), handleMarkers(tempMarkers)) : (handleActiveVehicleId(id), handleCurrentVehicle(trip), handleMarkers( 
+                        [{
+                            type: trip.vehicle.type.toString().toLowerCase(),
+                            status: trip.vehicleInTripStatus,
+                            lat: trip.currentPosition.lat,
+                            lng: trip.currentPosition.lng,
+                            vehicle: trip.vehicle
+                        }]))
                 }}>
                 <div className="vehicle-image d-flex align-items-center"> 
                     <img className="image" src={getImageSource().default.src} width="52" height="52" alt="vehicle-avatar" />

@@ -6,7 +6,7 @@ export type PageHeaderProps = {
     handleToggleSidebar ?: () => void;
 };
 
-const PageHeader = ({ handleCollapsedChange, handleToggleSidebar }: PageHeaderProps) => {
+const PageHeader: React.FC<PageHeaderProps> = ({ handleCollapsedChange, handleToggleSidebar }) => {
   return (
     <>
         <Navbar bg="primary" variant="dark" fixed="top" className="py-0">

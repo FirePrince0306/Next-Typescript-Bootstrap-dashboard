@@ -6,11 +6,11 @@ export type PageHeadProps = PropsWithChildren<{
   description?: string;
 }>;
 
-export default function PageHead({
+const PageHead: React.FC<PageHeadProps> = ({
   title,
   description = 'React project based on TypeScript, Next.js & Bootstrap.',
   children,
-}: PageHeadProps) {
+}) => {
   return (
     <Head>
       <title>
@@ -24,3 +24,5 @@ export default function PageHead({
     </Head>
   );
 }
+
+export default PageHead;
