@@ -40,7 +40,7 @@ const Sidebar: React.FC<SidebarProps>  = ({ collapsed, toggled, handleToggleSide
                         icon={<FaBookOpen />}
                     >
                             <MenuItem><ActiveLink path="dashboard/vehicle-overview"><a href="/dashboard/vehicle-overview">Vehicles Overview</a></ActiveLink></MenuItem>
-                            <MenuItem>Real Time Data</MenuItem>
+                            <MenuItem><ActiveLink path="dashboard/real-time-data"><a href="/dashboard/real-time-data">Real Time Data</a></ActiveLink></MenuItem>
                             <MenuItem>Events</MenuItem>
                     </SubMenu>
                     <SubMenu

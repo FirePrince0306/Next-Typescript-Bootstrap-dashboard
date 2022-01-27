@@ -375,3 +375,108 @@
 .MuiCheckbox-colorSecondary.Mui-checked {
     color: #0d8a72 !important;
 }
+
+/* Real Time data */
+
+.main .divider {
+    height: 64px;
+    background-color: #cdd5de;
+}
+
+.basic {
+    color: #414D6A;
+}
+
+.real-time-data {
+	.indicator > div:first-child {
+		left: 15px;
+		top: 10px;
+	}
+}
+
+.expenses {
+	// width: calc(37.5% - 16px);
+	width: 50%;
+
+	.divider {
+		width: 2px;
+		margin: 0 4px;
+		height: 44px;
+	}
+}
+
+.expenses-vehicle {
+	width: 75%;
+}
+
+.vehicle-condition {
+	// width: calc(37.5% - 16px);
+	width: 50%;
+
+	.echart > div {
+		margin: 8px 6px;
+		border: 1px solid #cdd5de;
+		border-radius: 5px;
+		width: 33.3333%;
+	}
+}
+
+.traffic-jam, .accidents {
+	width: calc(100% - 16px);
+	svg {
+		font-size: 12px;
+	}
+}
+
+.warning {
+	width: calc(50% - 16px);
+	
+	svg {
+		font-size: 14px;
+	}
+}
+
+.custom-warning-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+
+	&.text-danger {
+		background-color: #FEF3F2;
+	}
+}
+
+.custom-warning-card {
+	padding: 12px 12px 11px 12px;
+    overflow: visible;
+    background-color: #FEF3F2;
+    border-left: 3px solid #ef6454;
+}
+
+.warning-left {
+	width: 300px;
+}
+
+@media (max-width: 1400px) {
+	.expenses, .vehicle-condition {
+		width: 100%;
+	}
+
+	.expenses-vehicle {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+	.expenses, .vehicle-condition {
+		width: 50%;
+	}
+}
+
+@media (max-width: 992px) {
+	.expenses, .vehicle-condition {
+		width: calc(100% - 16px);
+	}
+}

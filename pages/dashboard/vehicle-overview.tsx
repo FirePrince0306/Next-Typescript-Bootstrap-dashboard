@@ -2,11 +2,8 @@ import { useState } from 'react';
 import dynamic from "next/dynamic";
 import classNames from "classnames";
 import {Checkbox, FormControlLabel, makeStyles } from "@material-ui/core";
-// import FormControlLabel from "@material-ui/core/FormControlLabel";
-// import { makeStyles } from "@material-ui/core/styles";
-import styles from "./styles.js";
+import styles from "./shared/styles.js";
 
-// import Check from "@material-ui/icons/Check";
 import { AiOutlineCheck } from 'react-icons/ai';
 import { IoMdClose } from 'react-icons/io';
 import { IoOptionsSharp } from 'react-icons/io5';
@@ -16,11 +13,11 @@ import { RiListUnordered } from 'react-icons/ri';
 import { Trip } from '~/components/features/common';
 import { TripsService } from '~/components/utils/trips.service';
 
-import VehicleTabs from '~/pages/dashboard/vehicle-tabs';
-import TripDetails from '~/pages/dashboard/trip-details';
-import Indicator from '~/pages/dashboard/indicator';
+import VehicleTabs from '~/pages/dashboard/shared/vehicle-tabs';
+import TripDetails from '~/pages/dashboard/shared/trip-details';
+import Indicator from '~/pages/dashboard/shared/indicator';
 
-const MapWidget = dynamic(() => import('./maps'), {
+const MapWidget = dynamic(() => import('./shared/maps'), {
   	ssr: false
 });
 

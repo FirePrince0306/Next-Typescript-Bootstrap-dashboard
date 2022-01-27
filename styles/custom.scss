@@ -8,6 +8,7 @@ $icon-size: 1rem;
 $submenu-indent: 20px;
 $light-color: #cdd5de;
 $text-danger-color: #ef6454;
+$base-color: #414D6A;
 
 @import '~react-pro-sidebar/dist/scss/styles.scss';
 
@@ -66,6 +67,13 @@ body {
     line-height: 1.5rem;
 }
 
+.paragraph-2 {
+    color: $base-color;
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+}
+
 .label {
     color: $sidebar-color;
     font-size: .75rem;
@@ -74,7 +82,7 @@ body {
 }
 
 .text-basic {
-    color: #414D6A;
+    color: $base-color;
 }
 
 .text-hint {
@@ -87,6 +95,14 @@ body {
 
 .text-warning {
     color: #ffb94d;
+}
+
+.bg-default {
+    background-color: $sidebar-bg-color;
+}
+
+.bg-grey {
+    background-color: #E7EDF4;
 }
 
 .size-xl-medium {
@@ -122,7 +138,7 @@ body {
     &.status-control {
         background-color: #fbfdff;
         border-color: #fbfdff;
-        color: #414D6A;
+        color: $base-color;
     }
 
     &.status-control:hover {
@@ -134,11 +150,24 @@ body {
 .appearance-outline {
     border-style: solid;
     border-width: .0625rem;
+    text-transform: uppercase;
 
     &.size-xl-small {
         font-size: .75rem;
         line-height: 1rem;
         padding: .4375rem .875rem;
+    }
+
+    &.size-xl-medium {
+        font-size: .875rem;
+        line-height: 1rem;
+        padding: .6875rem 1.125rem;
+    }
+
+    &.size-xl-tiny {
+        font-size: .625rem;
+        line-height: .75rem;
+        padding: .3125rem .625rem;
     }
 
     &.status-danger {
@@ -152,6 +181,18 @@ body {
             color: #ef6454;
         }
     }
+
+    &.status-basic:hover {
+        background-color: rgba(143, 155, 179, 0.16);
+        border-color: #818894;
+        color: #818894;
+    }
+
+    &.status-basic {
+        background-color: rgba(143, 155, 179, 0.08);
+        border-color: #818894;
+        color: #818894;
+    }
 }
 
 .shape-rectangle {
@@ -161,7 +202,7 @@ body {
 .status-basic {
     background-color: #f3f6f9;
     border-color: $light-color;
-    color: #414d6a;
+    color: $base-color;
 
     &:focus {
         border-color: $highlight-color;
@@ -170,7 +211,7 @@ body {
     &.appearance-filled {
         background-color: #e7edf4;
         border-color: #e7edf4;
-        color:  #414D6A;
+        color:  $base-color;
     }
 }
 
@@ -178,6 +219,12 @@ body {
     transition-duration: 0.15s;
     transition-property: background-color,border-color,box-shadow,color;
     transition-timing-function: ease-in;
+}
+
+@media (min-width: 768px) {
+    .w-md-100 {
+        width: 100% !important;
+    }
 }
 
 /* Header */

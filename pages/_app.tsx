@@ -44,7 +44,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 					handleToggleSidebar={handleToggleSidebar}
 				/>
 
-				<div className="layout-container d-flex">
+				<div className="layout-container d-flex main">
 					<Sidebar
 						collapsed={collapsed}
 						toggled={toggled}
