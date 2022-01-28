@@ -41,7 +41,7 @@ const Sidebar: React.FC<SidebarProps>  = ({ collapsed, toggled, handleToggleSide
                     >
                             <MenuItem><ActiveLink path="dashboard/vehicle-overview"><a href="/dashboard/vehicle-overview">Vehicles Overview</a></ActiveLink></MenuItem>
                             <MenuItem><ActiveLink path="dashboard/real-time-data"><a href="/dashboard/real-time-data">Real Time Data</a></ActiveLink></MenuItem>
-                            <MenuItem>Events</MenuItem>
+                            <MenuItem><ActiveLink path="dashboard/events"><a href="/dashboard/events">Events</a></ActiveLink></MenuItem>
                     </SubMenu>
                     <SubMenu
                         title='Vehicles'

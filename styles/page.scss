@@ -15,7 +15,7 @@
 	}
 }
 
-.vehicle-tabs {
+.vehicle-tabs, .event-tabs {
 	.nav-link {
 		position: relative;
 		padding: 1rem 2rem;
@@ -376,7 +376,7 @@
     color: #0d8a72 !important;
 }
 
-/* Real Time data */
+/* Real Time data page */
 
 .main .divider {
     height: 64px;
@@ -395,7 +395,6 @@
 }
 
 .expenses {
-	// width: calc(37.5% - 16px);
 	width: 50%;
 
 	.divider {
@@ -410,7 +409,6 @@
 }
 
 .vehicle-condition {
-	// width: calc(37.5% - 16px);
 	width: 50%;
 
 	.echart > div {
@@ -430,10 +428,14 @@
 
 .warning {
 	width: calc(50% - 16px);
-	
+
 	svg {
 		font-size: 14px;
 	}
+}
+
+.trips-per-trips, .out-safe {
+	width: 50%;
 }
 
 .custom-warning-button {
@@ -459,6 +461,16 @@
 	width: 300px;
 }
 
+.critical-card {
+	padding: 30px 0 28px 30px;
+
+	.critical-card-icon {
+		width: 50px;
+		height: 50px;
+		background-color: #FEF3F2;
+	}
+}
+
 @media (max-width: 1400px) {
 	.expenses, .vehicle-condition {
 		width: 100%;
@@ -476,7 +488,23 @@
 }
 
 @media (max-width: 992px) {
-	.expenses, .vehicle-condition {
+	.expenses, .vehicle-condition, .warning {
 		width: calc(100% - 16px);
 	}
+
+	.trips-per-trips, .out-safe {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.trips-per-trips, .out-safe {
+		width: calc(100% - 16px);
+	}
+}
+
+/* Events page */
+
+.events {
+	background-color: #fbfdff;
 }

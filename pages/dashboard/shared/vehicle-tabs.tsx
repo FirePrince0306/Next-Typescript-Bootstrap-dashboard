@@ -14,7 +14,7 @@ export type VehicleTabsProps = {
 };
  
 const VehicleTabs: React.FC<VehicleTabsProps> = ({handleActiveVehicleId, handleCurrentVehicle, handleMarkers, id}) => {
-	const MyTripsService:TripsService = new TripsService();
+	const MyTripsService: TripsService = new TripsService();
     let drivingVehicles = MyTripsService.getTripsWithDrivingVehicles();
     let parkedVehicles = MyTripsService.getTripsWithParkedVehicles();
     let allVehicles = MyTripsService.getTrips();

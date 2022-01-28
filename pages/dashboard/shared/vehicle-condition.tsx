@@ -105,7 +105,7 @@ const VehicleCondition = () => {
                 <h6 className="heading text-basic">Vehicle Condition</h6>
                 <div className="pt-3">
                     <div className="echart d-flex">
-                        <div className="p-2">
+                        <div className="p-2 ms-0">
                             <ReactEcharts
                                 option={getOption(0)}
                                 className="ms-0"
@@ -128,7 +128,7 @@ const VehicleCondition = () => {
                                 <span className="text1 text-hint caption-2">Vehicles</span>
                             </div>
                         </div>
-                        <div className="p-2">
+                        <div className="p-2 me-0">
                             <ReactEcharts
                                 option={getOption(2)}
                                 className="me-0"

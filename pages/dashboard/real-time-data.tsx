@@ -1,11 +1,14 @@
 import Indicator from '~/pages/dashboard/shared/indicator';
 import Expenses from '~/pages/dashboard/shared/expenses';
 import VehicleCondition from '~/pages/dashboard/shared/vehicle-condition';
+import TripsChart from '~/pages/dashboard/shared/trips-chart';
+import SafeChart from '~/pages/dashboard/shared/safe-chart';
 
-import { AiOutlineExpandAlt } from 'react-icons/ai';
-import { RiCalendarTodoLine, RiLayoutFill, RiMapPinFill } from 'react-icons/ri';
-import { GoClock } from 'react-icons/go';
+import { AiOutlineExpandAlt, AiOutlineSetting } from 'react-icons/ai';
+import { RiCalendarTodoLine, RiLayoutFill, RiMapPinFill, RiBroadcastLine } from 'react-icons/ri';
+import { GoClock, GoCircleSlash } from 'react-icons/go';
 import { FaTruck, FaAngleRight } from 'react-icons/fa';
+import { MdOutlineErrorOutline } from 'react-icons/md';
 
 const RealTimeData = () => {
     return (
@@ -123,11 +126,11 @@ const RealTimeData = () => {
                 </div>
             </div>
 
-            <div className="d-flex px-2">
-                <div className="m-2 p-4 bg-white border border-1 rounded-3 warning w-50">
+            <div className="d-lg-flex px-2">
+                <div className="m-2 p-4 bg-white border border-1 rounded-3 warning">
                     <h6 className="heading text-basic mb-1">Warnings</h6>
                     <p className="text text-hint paragraph-2">Driving Policy Violations</p>
-                    <div className="d-flex">
+                    <div className="d-flex py-3 py-lg-0">
                         <div className="warning-left">
                             <div className="d-flex align-items-center justify-content-between pt-10 pb-10">
                                 <div>
@@ -136,7 +139,7 @@ const RealTimeData = () => {
                                 </div>
                                 <div className="d-flex align-items-center">
                                     <span className="text-danger subtitle custom-warning-button">2</span>
-                                    <FaAngleRight className="text-hint" />
+                                    <FaAngleRight className="text-hint ms-1" />
                                 </div>
                             </div>
                             <div className="d-flex align-items-center justify-content-between pt-10 pb-10">
@@ -146,7 +149,7 @@ const RealTimeData = () => {
                                 </div>
                                 <div className="d-flex align-items-center">
                                     <span className="text-danger subtitle custom-warning-button">1</span>
-                                    <FaAngleRight className="text-hint" />
+                                    <FaAngleRight className="text-hint ms-1" />
                                 </div>
                             </div>
                             <div className="d-flex align-items-center justify-content-between pt-10 pb-10">
@@ -156,7 +159,7 @@ const RealTimeData = () => {
                                 </div>
                                 <div className="d-flex align-items-center">
                                     <span className="subtitle custom-warning-button">0</span>
-                                    <FaAngleRight className="text-hint" />
+                                    <FaAngleRight className="text-hint ms-1" />
                                 </div>
                             </div>
                             <div className="d-flex align-items-center justify-content-between pt-10 pb-10">
@@ -166,7 +169,7 @@ const RealTimeData = () => {
                                 </div>
                                 <div className="d-flex align-items-center">
                                     <span className="text-danger subtitle custom-warning-button">3</span>
-                                    <FaAngleRight className="text-hint" />
+                                    <FaAngleRight className="text-hint ms-1" />
                                 </div>
                             </div>
                         </div>
@@ -177,21 +180,240 @@ const RealTimeData = () => {
                                     <p className="text-danger paragraph-2 mb-0">Driving Time Exceeded</p>
                                     <span className="text-danger caption">WO-13245</span>
                                 </div>
-                                <span className="text-danger caption flex-1">&gt; 2 hours</span>
+                                <span className="text-danger caption w-50 text-end">&gt; 2 hours</span>
                             </div>
                             <div className="d-flex justify-content-between custom-warning-card">
                                 <div>
                                     <p className="text-danger paragraph-2 mb-0">Driving Time Exceeded</p>
                                     <span className="text-danger caption">WO-13245</span>
                                 </div>
-                                <span className="text-danger caption flex-1">&gt; 2 hours</span>
+                                <span className="text-danger caption w-50 text-end">&gt; 2 hours</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="m-2 p-4 bg-white border border-1 rounded-3">
-                    <div className=""></div>
-                    <div className=""></div>
+                <div className="d-md-flex trips-per-trips">
+                    <div className="m-2 p-4 bg-white border border-1 rounded-3 trips w-100 w-md-50">
+                        <h6 className="heading text-basic mb-1">Trips</h6>
+                        <p className="text text-hint paragraph-2">24 hours Trips Data</p>
+                        <div className="d-flex justify-content-between align-items-center py-2">
+                            <div>
+                                <RiBroadcastLine className="me-1" />
+                                <span className="text-hint subtitle-2">Live Trips</span>
+                            </div>
+                            <div className="d-flex align-items-center">
+                                <span className="text-basic subtitle">156</span>
+                                <FaAngleRight className="text-hint ms-1" />
+                            </div>
+                        </div>
+                        <div className="divider2"></div>
+                        <div className="d-flex justify-content-between align-items-center py-2">
+                            <div>
+                                <RiBroadcastLine className="me-1 text-info" />
+                                <span className="text-hint subtitle-2">Scheduled</span>
+                            </div>
+                            <div className="d-flex align-items-center">
+                                <span className="text-basic subtitle">158</span>
+                                <FaAngleRight className="text-hint ms-1" />
+                            </div>
+                        </div>
+                        <div className="divider2"></div>
+                        <div className="d-flex justify-content-between align-items-center py-2">
+                            <div>
+                                <RiBroadcastLine className="me-1 text-success" />
+                                <span className="text-hint subtitle-2">Completed</span>
+                            </div>
+                            <div className="d-flex align-items-center">
+                                <span className="text-basic subtitle">256</span>
+                                <FaAngleRight className="text-hint ms-1" />
+                            </div>
+                        </div>
+                        <div className="divider2"></div>
+                        <div className="d-flex justify-content-between align-items-center py-2">
+                            <div>
+                                <RiBroadcastLine className="me-1 text-warning" />
+                                <span className="text-hint subtitle-2">Being Late</span>
+                            </div>
+                            <div className="d-flex align-items-center">
+                                <span className="text-basic subtitle">15</span>
+                                <FaAngleRight className="text-hint ms-1" />
+                            </div>
+                        </div>
+                        <div className="divider2"></div>
+                        <div className="d-flex justify-content-between align-items-center py-2">
+                            <div>
+                                <RiBroadcastLine className="me-1 text-danger" />
+                                <span className="text-hint subtitle-2">Failed</span>
+                            </div>
+                            <div className="d-flex align-items-center">
+                                <span className="text-basic subtitle">2</span>
+                                <FaAngleRight className="text-hint ms-1" />
+                            </div>
+                        </div>
+                        <div className="divider2 mb-4"></div>
+                    </div>
+
+                    <div className="m-2 p-4 bg-white border border-1 rounded-3 trips-per w-100 w-md-50">
+                        <h6 className="heading text-basic">Trips Performance</h6>
+                        <div className="mt-4 pt-3">
+                            <div className="d-flex justify-content-between">
+                                <div className="d-flex flex-column">
+                                    <span className="text-basic subtitle">158</span>
+                                    <span className="text-hint caption">Planned for today</span>
+                                </div>
+                                <div className="d-flex flex-column">
+                                    <span className="text-basic subtitle">23</span>
+                                    <span className="text-hint caption">left</span>
+                                </div>
+                            </div>
+                            <div className="trips-chart">
+                                <TripsChart />
+                            </div>
+                            <div className="d-flex mt-4 pt-1">
+                                <div className="d-flex flex-column w-50">
+                                    <span className="text-primary subtitle-2">40% / 158</span>
+                                    <span className="text-hint caption">Live Trips</span>
+                                </div>
+                                <div className="d-flex flex-column w-50">
+                                    <span className="text-success subtitle-2">20% / 158</span>
+                                    <span className="text-hint caption">Completed</span>
+                                </div>
+                            </div>
+                            <div className="d-flex mt-3 pt-1">
+                                <div className="d-flex flex-column w-50">
+                                    <span className="text-warning subtitle-2">10% / 158</span>
+                                    <span className="text-hint caption">Being Late</span>
+                                </div>
+                                <div className="d-flex flex-column w-50">
+                                    <span className="text-danger subtitle-2">5% / 158</span>
+                                    <span className="text-hint caption">Failed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="d-lg-flex px-2 pb-2">
+                <div className="d-md-flex out-safe">
+                    <div className="m-2 p-4 bg-white border border-1 rounded-3 out-of-service w-100 w-md-50">
+                        <h6 className="heading text-basic mb-1">Out Of Service</h6>
+                        <p className="text text-hint paragraph-2">Out of order vehicles</p>
+                        <div className="mb-3">
+                            <h5 className="heading1 text-basic mb-0">25</h5>
+                            <p className="text1 text-hint paragraph-2">Vehicles Total</p>
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center py-2">
+                            <div>
+                                <AiOutlineSetting className="me-1 text-hint" />
+                                <span className="text-hint subtitle-2">Maintenance</span>
+                            </div>
+                            <div className="d-flex align-items-center">
+                                <span className="text-basic subtitle">15</span>
+                                <FaAngleRight className="text-hint ms-1" />
+                            </div>
+                        </div>
+                        <div className="divider2"></div>
+                        <div className="d-flex justify-content-between align-items-center py-2">
+                            <div>
+                                <GoCircleSlash className="me-1 text-hint" />
+                                <span className="text-hint subtitle-2">Broken</span>
+                            </div>
+                            <div className="d-flex align-items-center">
+                                <span className="text-basic subtitle">7</span>
+                                <FaAngleRight className="text-hint ms-1" />
+                            </div>
+                        </div>
+                        <div className="divider2"></div>
+                        <div className="d-flex justify-content-between align-items-center py-2">
+                            <div>
+                                <MdOutlineErrorOutline className="me-1 text-hint" />
+                                <span className="text-hint subtitle-2">In Accident</span>
+                            </div>
+                            <div className="d-flex align-items-center">
+                                <span className="text-basic subtitle">2</span>
+                                <FaAngleRight className="text-hint ms-1" />
+                            </div>
+                        </div>
+                        <div className="divider2"></div>
+                    </div>
+
+                    <div className="m-2 p-4 bg-white border border-1 rounded-3 safe-driving w-100 w-md-50">
+                        <h6 className="heading text-basic">Safe Driving Meter</h6>
+                        <div className="mt-4 pt-3 safe-chart">
+                            <SafeChart />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="m-2 d-flex bg-white border border-1 rounded-3 criticals flex-grow-1">
+                    <div className="w-50">
+                        <div className="critical-card">
+                            <div className="d-flex mb-10">
+                                <div className="critical-card-icon d-flex align-items-center justify-content-center me-10">
+                                    <img className="image" src={require('~/public/images/gas@3x-red.svg').default.src} width="24" height="30" alt="icon" />
+                                </div>
+                                <div className="d-flex flex-column">
+                                    <h5 className="heading text-danger mb-0">5</h5>
+                                    <span className="text text-hint caption-2">Vehicles</span>
+                                </div>
+                            </div>
+                            <div className="d-flex flex-column">
+                                <p className="text-basic mb-0">Fuel Consumption</p>
+                                <span className="text-hint caption">&gt; 30L / 100km</span>
+                            </div>
+                        </div>
+                        <div className="divider2"></div>
+                        <div className="critical-card">
+                            <div className="d-flex mb-10">
+                                <div className="critical-card-icon d-flex align-items-center justify-content-center me-10">
+                                    <img className="image" src={require('~/public/images/speed@3x-red.svg').default.src} width="24" height="30" alt="icon" />
+                                </div>
+                                <div className="d-flex flex-column">
+                                    <h5 className="heading1 text-danger mb-0">3</h5>
+                                    <span className="text-hint caption-2">Vehicles</span>
+                                </div>
+                            </div>
+                            <div className="d-flex flex-column">
+                                <p className="text-basic mb-0">Speed</p>
+                                <span className="text-hint caption">&gt; 130km / h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="divider3"></div>
+                    <div className="w-50">
+                        <div className="critical-card">
+                            <div className="d-flex mb-10">
+                                <div className="critical-card-icon d-flex align-items-center justify-content-center me-10">
+                                    <img className="image" src={require('~/public/images/filter@3x-red.svg').default.src} width="24" height="30" alt="icon" />
+                                </div>
+                                <div className="d-flex flex-column">
+                                    <h5 className="heading2 text-danger mb-0">10</h5>
+                                    <span className="text-hint caption-2">Vehicles</span>
+                                </div>
+                            </div>
+                            <div className="d-flex flex-column">
+                                <p className="text-basic mb-0">CO2 Emission</p>
+                                <span className="text-hint caption">&gt; 450g/km</span>
+                            </div>
+                        </div>
+                        <div className="divider2"></div>
+                        <div className="critical-card">
+                            <div className="d-flex mb-10">
+                                <div className="critical-card-icon d-flex align-items-center justify-content-center me-10">
+                                    <img className="image" src={require('~/public/images/motor@3x-red.svg').default.src} width="24" height="30" alt="icon" />
+                                </div>
+                                <div className="d-flex flex-column">
+                                    <h5 className="heading3 text-danger mb-0">1</h5>
+                                    <span className="text-hint caption-2">Vehicles</span>
+                                </div>
+                            </div>
+                            <div className="d-flex flex-column">
+                                <p className="text-basic mb-0">Oil Temperature</p>
+                                <span className="text-hint caption">&gt; 120C</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -97,6 +97,10 @@ body {
     color: #ffb94d;
 }
 
+.text-info {
+    color: #189be3;
+}
+
 .bg-default {
     background-color: $sidebar-bg-color;
 }
@@ -224,6 +228,10 @@ body {
 @media (min-width: 768px) {
     .w-md-100 {
         width: 100% !important;
+    }
+
+    .w-md-50 {
+        width: 50% !important;
     }
 }
 
