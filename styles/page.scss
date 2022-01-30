@@ -508,3 +508,39 @@
 .events {
 	background-color: #fbfdff;
 }
+
+.event-tabs .tab-pane {
+	padding: 16px 32px;
+}
+
+.event-tabs-selectbox {
+	> div {
+		min-width: 208px;
+	}
+
+	.react-datepicker__input-container input {
+		padding: 6px;
+		border: 1px solid #cdd5de;
+		border-radius: 5px;
+	}
+}
+
+.select-count {
+	min-width: 208px;
+}
+
+@media (max-width: 1200px) {
+	.event-tabs-selectbox {
+		> div {
+			min-width: 150px;
+		}
+	}
+
+	.vehicle-event button {
+		padding: .5rem !important;
+	}
+
+	.select-count {
+		min-width: 150px;
+	}
+}
