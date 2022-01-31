@@ -47,9 +47,9 @@ const Sidebar: React.FC<SidebarProps>  = ({ collapsed, toggled, handleToggleSide
                         title='Vehicles'
                         icon={<FaTruck />}
                         >
-                        <MenuItem>Fleet</MenuItem>
-                        <MenuItem>Vehicles Assignment</MenuItem>
-                        <MenuItem>Vehicle Details</MenuItem>
+                        <MenuItem><ActiveLink path="vehicles/fleet"><a href="/vehicles/fleet">Fleet</a></ActiveLink></MenuItem>
+                        <MenuItem><ActiveLink path="vehicles/vehicle-assignment"><a href="/vehicles/vehicle-assignment">Vehicles Assignment</a></ActiveLink></MenuItem>
+                        <MenuItem><ActiveLink path="vehicles/vehicle-details"><a href="/vehicles/vehicle-details">Vehicle Details</a></ActiveLink></MenuItem>
                     </SubMenu>
                     <SubMenu
                         title='Trips'

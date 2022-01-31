@@ -101,6 +101,10 @@ body {
     color: #189be3;
 }
 
+.text-disabled {
+    color: rgba(143, 155, 179, 0.48);
+}
+
 .bg-default {
     background-color: $sidebar-bg-color;
 }
@@ -133,15 +137,32 @@ body {
         padding: .6875rem 1.125rem;
     }
 
+    &.size-xl-small {
+        font-size: .75rem;
+        line-height: 1rem;
+        padding: .4375rem .875rem;
+    }
+
     &.size-xl-tiny {
         font-size: .625rem;
         line-height: .75rem;
         padding: .3125rem .625rem;
     }
 
+    &.status-primary {
+        background-color: #0D8A72;
+        border-color: #0D8A72;
+        color: $sidebar-bg-color;
+
+        &:hover {
+            background-color: #3BB894;
+            border-color: #3BB894;
+        }
+    }
+
     &.status-control {
-        background-color: #fbfdff;
-        border-color: #fbfdff;
+        background-color: $sidebar-bg-color;
+        border-color: $sidebar-bg-color;
         color: $base-color;
     }
 

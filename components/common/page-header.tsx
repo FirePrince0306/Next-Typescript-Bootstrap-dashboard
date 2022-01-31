@@ -16,7 +16,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ handleCollapsedChange, handleTo
                 <div className="nav-left d-flex flex-wrap align-items-center">
                     <div className="divider"></div>
                     
-                    <span className="navbar-toggler d-none d-md-block icon large mx-2 mx-md-3 p-0 border-0 text-white d-flex" onClick={handleCollapsedChange}>
+                    <span className="navbar-toggler d-none d-lg-block icon large mx-2 mx-md-3 p-0 border-0 text-white d-flex" onClick={handleCollapsedChange}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" className="eva eva-menu" fill="currentColor">
                             <g data-name="Layer 2">
                                 <g data-name="menu">
@@ -29,7 +29,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ handleCollapsedChange, handleTo
                         </svg>
                     </span>
 
-                    <span className="btn-toggler d-block d-md-none icon large mx-2 mx-md-3 border-0 text-white d-flex" onClick={handleToggleSidebar}>
+                    <span className="btn-toggler d-block d-lg-none icon large mx-2 mx-md-3 border-0 text-white d-flex" onClick={handleToggleSidebar}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" className="eva eva-menu" fill="currentColor">
                             <g data-name="Layer 2">
                                 <g data-name="menu">

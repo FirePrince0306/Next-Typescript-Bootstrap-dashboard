@@ -40,7 +40,6 @@ const EventTabs = () => {
 
     let allVehicles = MyEventsService.getEvents();
     let featuredVehicles = MyEventsService.getEvents().slice(1, 2);
-    console.log(allVehicles, featuredVehicles)
 
     return (
         <div className="event-tabs">
@@ -60,6 +59,9 @@ const EventTabs = () => {
                                 <Select
                                     className="me-md-2 me-0 mb-3 mb-md-0"
                                     options={options1}
+                                    id="type-selector"
+                                    instanceId="type-selector"
+                                    inputId="type-selector"
                                     isSearchable={true}
                                     placeholder="All Types"
                                     components={{
@@ -70,6 +72,9 @@ const EventTabs = () => {
                                     className="me-md-2 me-0 mb-3 mb-md-0"
                                     options={options2}
                                     isSearchable={true}
+                                    id="vehicle-selector"
+                                    instanceId="vehicle-selector"
+                                    inputId="vehicle-selector"
                                     placeholder="All Vehicles"
                                     components={{
                                         IndicatorSeparator: () => null
@@ -109,6 +114,9 @@ const EventTabs = () => {
                                     className="me-2 select-count mb-3 mb-md-0"
                                     options={options3}
                                     isSearchable={true}
+                                    id="count-selector"
+                                    instanceId="count-selector"
+                                    inputId="count-selector"
                                     placeholder="20"
                                     components={{
                                         IndicatorSeparator: () => null
@@ -169,6 +177,9 @@ const EventTabs = () => {
                                     className="me-md-2 me-0 mb-3 mb-md-0"
                                     options={options1}
                                     isSearchable={true}
+                                    id="type-selector-2"
+                                    instanceId="type-selector-2"
+                                    inputId="type-selector-2"
                                     placeholder="All Types"
                                     components={{
                                         IndicatorSeparator: () => null
@@ -178,6 +189,9 @@ const EventTabs = () => {
                                     className="me-md-2 me-0 mb-3 mb-md-0"
                                     options={options2}
                                     isSearchable={true}
+                                    id="vehicle-selector-2"
+                                    instanceId="vehicle-selector-2"
+                                    inputId="vehicle-selector-2"
                                     placeholder="All Vehicles"
                                     components={{
                                         IndicatorSeparator: () => null
@@ -217,6 +231,9 @@ const EventTabs = () => {
                                     className="me-2 select-count mb-3 mb-md-0"
                                     options={options3}
                                     isSearchable={true}
+                                    id="count-selector-2"
+                                    instanceId="count-selector-2"
+                                    inputId="count-selector-2"
                                     placeholder="20"
                                     components={{
                                         IndicatorSeparator: () => null

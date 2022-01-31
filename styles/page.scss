@@ -529,6 +529,23 @@
 	min-width: 208px;
 }
 
+.vehicle-event:hover {
+	border-color: #0D8A72 !important;
+}
+
+.vehicle-assigned {
+	&.show {
+		border-bottom-right-radius: 0 !important;
+		border-bottom-left-radius: 0 !important;
+		border-bottom-width: 0 !important;
+
+		+ .detail {
+			border-top-right-radius: 0 !important;
+			border-top-left-radius: 0 !important;
+		}
+	}
+}
+
 @media (max-width: 1200px) {
 	.event-tabs-selectbox {
 		> div {

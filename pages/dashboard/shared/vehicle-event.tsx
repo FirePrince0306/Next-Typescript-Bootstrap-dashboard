@@ -54,7 +54,7 @@ const VehicleEvent: React.FC<VehicleEventProps> = ({item}: VehicleEventProps) =>
                             </div> : item.status === 'info' ?
                                 <div className="d-inline-flex align-items-center border border-1 rounded-2 py-1 px-2">
                                     <FaInfoCircle className="text-info me-1" />
-                                    <span className="text-primary subtitle">Info</span>
+                                    <span className="text-info subtitle">Info</span>
                                 </div> : item.status === 'warning' ?
                                     <div className="d-inline-flex align-items-center border border-1 rounded-2 py-1 px-2">
                                         <RiErrorWarningFill className="text-warning me-1" />
