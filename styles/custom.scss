@@ -113,6 +113,10 @@ body {
     background-color: #E7EDF4;
 }
 
+.bg-pink {
+    background-color:#FEF3F2;
+}
+
 .size-xl-medium {
     font-size: .9375rem;
     font-weight: 400;
@@ -218,6 +222,18 @@ body {
         border-color: #818894;
         color: #818894;
     }
+
+    &.status-primary {
+        background-color: rgba(51, 102, 255, 0.08);
+        border-color: #0D8A72;
+        color: #0D8A72;
+
+        &:hover {
+            background-color: rgba(51, 102, 255, 0.16);
+            border-color: #0D8A72;
+            color: #0D8A72;
+        }
+    }
 }
 
 .appearance-ghost {
@@ -245,6 +261,12 @@ body {
 
     &.size-medium {
         padding: .6875rem 1.125rem;
+    }
+
+    &.size-xl-small {
+        font-size: .75rem;
+        line-height: 1rem;
+        padding: .4375rem .875rem;
     }
 }
 
@@ -280,6 +302,16 @@ body {
     }
 
     .w-md-50 {
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .w-lg-100 {
+        width: 100% !important;
+    }
+
+    .w-lg-50 {
         width: 50% !important;
     }
 }

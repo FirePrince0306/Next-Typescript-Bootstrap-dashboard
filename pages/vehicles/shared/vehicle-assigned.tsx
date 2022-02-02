@@ -17,9 +17,7 @@ import {useState} from 'react';
 const VehicleAssigned: React.FC<VehicleAssignedProps> = ({item}: VehicleAssignedProps) => {
     const [isChecked, setIsChecked]=useState(false);
     const [showDetails, setShowDetails] = useState(false);
-
-    console.log(item)
-
+    
     function getImageSource(): any {
         const vehicleStatus = item.status.replace(/\s/g, '');
         return require(`/public/images/${item.type.toLowerCase()}-${vehicleStatus}.png`);

@@ -1,12 +1,17 @@
 import { BsPlus } from 'react-icons/bs';
 import { AiFillStar } from 'react-icons/ai';
 
-import VehicleTabs from "./shared/vehicle-tabs";
+import ConditionChart from '~/pages/vehicles/shared/condition-chart';
+import CommonInformation from '~/pages/vehicles/shared/common-infomation';
+import KeyIndicators from '~/pages/vehicles/shared/key-indicators';
+import DetailsCard from '~/pages/vehicles/shared/details-card';
+import Maintenance from '~/pages/vehicles/shared/maintenance';
+import Trip from '~/pages/vehicles/shared/trip';
 
 const VehicleDetails = () => {
     return (
-        <div className="vehicle-details">
-            <div className="d-flex align-items-center justify-content-between px-3 py-1 my-1">
+        <div className="vehicle-details bg-grey">
+            <div className="d-flex align-items-center justify-content-between px-3 py-2 bg-white">
                 <h5 className="heading text-basic mb-0">Back to All Vehicles</h5>
                 <div className="d-flex">
                     <button className="button size-xl-medium appearance-filled size-medium status-basic shape-rectangle icon-start transitions fw-bold me-10">
@@ -21,7 +26,31 @@ const VehicleDetails = () => {
                 </div>
             </div>
             <div className="divider2"></div>
-            <VehicleTabs />
+
+            <div className="p-3">
+                <div className="d-lg-flex">
+                    <CommonInformation />
+
+                    <div className="ms-3 p-4 bg-white border border-1 rounded-3 safe-driving">
+                        <h6 className="heading text-basic">Vehicle Condition</h6>
+                        <div className="mt-4 pt-3 safe-chart">
+                            <ConditionChart />
+                        </div>
+                    </div>
+
+                    <KeyIndicators />
+                </div>
+
+                <div className="d-lg-flex mt-3">
+                    <DetailsCard />
+
+                    <div className="d-lg-flex ms-lg-3 ms-0 maintenance-trip">
+                        <Maintenance />
+
+                        <Trip />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 };

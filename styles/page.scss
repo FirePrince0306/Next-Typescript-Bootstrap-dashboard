@@ -245,7 +245,7 @@
 }
 
 /* Map Popup */
-.leaflet-container {
+.vehicle-overview .leaflet-container {
 	font-family: 'Open Sans', sans-serif;
 	min-width: 320px;
 }
@@ -559,5 +559,52 @@
 
 	.select-count {
 		min-width: 150px;
+	}
+}
+
+/* vehicle details page */
+.common-information,
+.vehicle-details-card {
+	width: 40%;
+}
+
+.key-indicators {
+	width: 38.4%;
+}
+
+.common-information .common-information-body > div:first-child {
+	width: 65%;
+}
+
+.common-information .common-information-body > div:last-child {
+	width: 35%;
+}
+
+.vehicle-details {
+	.safe-driving {
+		width: calc(20.5% - 16px);
+	}
+
+	.leaflet-container {
+		min-height: 320px;
+	}
+}
+
+.maintenance-trip {
+	width: calc(60% - 1rem);
+}
+
+@media (max-width: 992px) {
+	.common-information,
+	.key-indicators,
+	.vehicle-details .safe-driving,
+	.vehicle-details-card,
+	.maintenance {
+		width: 100%;
+		margin-left: 0 !important;
+		margin-bottom: 1rem;
+	}
+	.maintenance-trip {
+		width: 100%;
 	}
 }

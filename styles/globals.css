@@ -55,6 +55,20 @@ input:focus {
 	outline: none;
 }
 
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.table>:not(:first-child) {
+  border-top: 1px solid #dee2ed;
+}
+
+table.table.border > thead th, table.table.border > tbody > tr > td {
+  border: 1px solid #dee2ed;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }

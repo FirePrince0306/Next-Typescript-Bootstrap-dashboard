@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import ReactEcharts from "echarts-for-react";
 
 import { GoCircleSlash } from 'react-icons/go';
@@ -13,7 +14,6 @@ export type FeetVehicleProps = {
     item: Vehicle
 };
 
-import {useState} from 'react';
 
 const FeetVehicle: React.FC<FeetVehicleProps> = ({item}: FeetVehicleProps) => {
     const [isChecked, setIsChecked]=useState(false);

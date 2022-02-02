@@ -66,7 +66,7 @@ const VehicleOverview = () => {
 
 	return (
 		<>
-			<div className="d-flex px-1 px-md-0 h-100 min-vh-100">
+			<div className="d-flex px-1 px-md-0 h-100 min-vh-100 vehicle-overview">
 				{
 					activeVehicle ? <>
 						<div className="active-vehicles">
