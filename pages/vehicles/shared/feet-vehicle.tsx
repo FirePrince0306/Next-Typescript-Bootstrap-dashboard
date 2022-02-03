@@ -14,7 +14,6 @@ export type FeetVehicleProps = {
     item: Vehicle
 };
 
-
 const FeetVehicle: React.FC<FeetVehicleProps> = ({item}: FeetVehicleProps) => {
     const [isChecked, setIsChecked]=useState(false);
 

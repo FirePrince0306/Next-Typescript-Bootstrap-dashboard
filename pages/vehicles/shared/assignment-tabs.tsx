@@ -12,9 +12,8 @@ import { VehiclesService } from '~/components/utils/vehicles.service';
 import VehicleAssigned from '~/pages/vehicles/shared/vehicle-assigned';
 
 const options1 = [
-    { value: 'all-vehicles', label: 'All Vehicles' },
-    { value: 'vehicle1', label: 'Vehicle 1' },
-    { value: 'vehicle2', label: 'Vehicle 2' }
+    { value: 'ab-1512', label: 'AB 1512' },
+    { value: 'vb-5432', label: 'VB 5432' }
 ]
 
 const AssignmentTabs = () => {
@@ -22,6 +21,10 @@ const AssignmentTabs = () => {
 
     let assignedVehicles = MyVehiclesService.getAssignedVehicles();
     let unAssignedVehicles = MyVehiclesService.getNotAssignedVehicles();
+    
+    function datePickHandler():void {
+
+    }
     
     return (
         <div className="event-tabs">
@@ -53,6 +56,8 @@ const AssignmentTabs = () => {
                                 <DatePicker
                                     className="input"
                                     placeholderText="Enter date"
+                                    readOnly={true}
+                                    onChange={datePickHandler}
                                 />
                             </div>
                                     
@@ -121,6 +126,8 @@ const AssignmentTabs = () => {
                                 <DatePicker
                                     className="input"
                                     placeholderText="Enter date"
+                                    readOnly={true}
+                                    onChange={datePickHandler}
                                 />
                             </div>
                                     

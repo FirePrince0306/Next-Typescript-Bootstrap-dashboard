@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import dynamic from "next/dynamic";
 import classNames from "classnames";
-import {Checkbox, FormControlLabel, makeStyles } from "@material-ui/core";
-import styles from "./shared/styles.js";
+import {Checkbox, FormControlLabel, makeStyles, createStyles, Theme } from "@material-ui/core";
+import MapStyle from "./shared/styles.js";
 
 import { AiOutlineCheck } from 'react-icons/ai';
 import { IoMdClose } from 'react-icons/io';
@@ -21,7 +21,11 @@ const MapWidget = dynamic(() => import('./shared/maps'), {
   	ssr: false
 });
 
-const useStyles = makeStyles(styles);
+let styles: any = (theme: Theme) => createStyles({
+	MapStyle
+});
+
+let useStyles = makeStyles(styles);
 
 const VehicleOverview = () => {
 	const [activeVehicle, setActiveVehicle] = useState(true);

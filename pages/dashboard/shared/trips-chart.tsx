@@ -1,7 +1,7 @@
 import ReactEcharts from "echarts-for-react";
 
 const TripsChart = () => {
-    function getOption() {
+    function getOption(): any {
         return {
             tooltip: {
                 trigger: 'axis',

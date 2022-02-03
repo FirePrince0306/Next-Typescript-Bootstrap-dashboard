@@ -1,7 +1,7 @@
 import React from 'react';
 import {Tab, Nav} from "react-bootstrap";
 import Select from 'react-select';
-import DatePicker from "react-datepicker";
+import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
 import { IoMdClose } from 'react-icons/io';
@@ -40,6 +40,10 @@ const EventTabs = () => {
 
     let allVehicles = MyEventsService.getEvents();
     let featuredVehicles = MyEventsService.getEvents().slice(1, 2);
+
+    function datePickHandler():void {
+
+    }
 
     return (
         <div className="event-tabs">
@@ -83,6 +87,8 @@ const EventTabs = () => {
                                 <DatePicker
                                     className="input"
                                     placeholderText="Enter date"
+                                    readOnly={true}
+                                    onChange={datePickHandler}
                                 />
                             </div>
                                     
@@ -200,6 +206,8 @@ const EventTabs = () => {
                                 <DatePicker
                                     className="input"
                                     placeholderText="Enter date"
+                                    readOnly={true}
+                                    onChange={datePickHandler}
                                 />
                             </div>
                                     

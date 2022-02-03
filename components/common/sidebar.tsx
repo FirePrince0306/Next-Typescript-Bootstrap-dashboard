@@ -55,7 +55,7 @@ const Sidebar: React.FC<SidebarProps>  = ({ collapsed, toggled, handleToggleSide
                         title='Trips'
                         icon={<FaMap />}
                         >
-                        <MenuItem>Overview</MenuItem>
+                        <MenuItem><ActiveLink path="trips/overview"><a href="/trips/overview">Overview</a></ActiveLink></MenuItem>
                         <MenuItem>Upcoming Trip</MenuItem>
                         <MenuItem>Schedule Trip</MenuItem>
                     </SubMenu>
