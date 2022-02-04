@@ -40,12 +40,7 @@ const TripTabs: React.FC<TripTabsProps> = ({}) => {
                 </Nav>
                 <Tab.Content className="h-100">
                     <Tab.Pane eventKey="map" className="h-100">
-                        <MapWidget
-                            data = {{
-                                trip: currentVehicle,
-                                markers: markers
-                            }}
-                        />
+                        <MapWidget />
                     </Tab.Pane>
                     <Tab.Pane eventKey="details">
                         <div className="d-md-flex px-2 py-1 mx-md-4">

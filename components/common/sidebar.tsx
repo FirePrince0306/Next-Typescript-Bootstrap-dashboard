@@ -45,6 +45,7 @@ const Sidebar: React.FC<SidebarProps>  = ({ collapsed, toggled, handleToggleSide
                     </SubMenu>
                     <SubMenu
                         title='Vehicles'
+                        className={`${router.asPath.includes('vehicles') ? 'active' : ''}`}
                         icon={<FaTruck />}
                         >
                         <MenuItem><ActiveLink path="vehicles/fleet"><a href="/vehicles/fleet">Fleet</a></ActiveLink></MenuItem>
@@ -53,14 +54,16 @@ const Sidebar: React.FC<SidebarProps>  = ({ collapsed, toggled, handleToggleSide
                     </SubMenu>
                     <SubMenu
                         title='Trips'
+                        className={`${router.asPath.includes('trips') ? 'active' : ''}`}
                         icon={<FaMap />}
                         >
                         <MenuItem><ActiveLink path="trips/overview"><a href="/trips/overview">Overview</a></ActiveLink></MenuItem>
-                        <MenuItem>Upcoming Trip</MenuItem>
-                        <MenuItem>Schedule Trip</MenuItem>
+                        <MenuItem><ActiveLink path="trips/upcoming-trip"><a href="/trips/upcoming-trip">Upcoming Trip</a></ActiveLink></MenuItem>
+                        <MenuItem><ActiveLink path="trips/schedule-trip"><a href="/trips/schedule-trip">Schedule Trip</a></ActiveLink></MenuItem>
                     </SubMenu>
                     <SubMenu
                         title='Maintenance'
+                        className={`${router.asPath.includes('maintenance') ? 'active' : ''}`}
                         icon={<AiFillSetting />}
                     >
                         <MenuItem>Maintenance Planner</MenuItem>

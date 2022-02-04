@@ -619,3 +619,21 @@
 	background-color: #ECF6F4;
 	border-color: #37bc7f !important;
 }
+
+.status-basic > span + div {
+	background-color: #f3f6f9;
+}
+
+.trip-parameter {
+	width: calc(60% - 8px);
+}
+
+.trip-cost {
+	width: calc(40% - 8px)
+}
+
+@media (max-width: 768px) {
+	.trip-parameter, .trip-cost {
+		width: 100%;
+	}
+}

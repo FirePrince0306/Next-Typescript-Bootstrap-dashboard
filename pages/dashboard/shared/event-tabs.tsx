@@ -85,9 +85,9 @@ const EventTabs = () => {
                                     }}
                                 />
                                 <DatePicker
-                                    className="input"
+                                    className="input status-basic"
                                     placeholderText="Enter date"
-                                    readOnly={true}
+                                    readOnly={false}
                                     onChange={datePickHandler}
                                 />
                             </div>
@@ -204,9 +204,9 @@ const EventTabs = () => {
                                     }}
                                 />
                                 <DatePicker
-                                    className="input"
+                                    className="input status-basic"
                                     placeholderText="Enter date"
-                                    readOnly={true}
+                                    readOnly={false}
                                     onChange={datePickHandler}
                                 />
                             </div>

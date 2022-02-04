@@ -22,7 +22,7 @@ const AssignmentTabs = () => {
     let assignedVehicles = MyVehiclesService.getAssignedVehicles();
     let unAssignedVehicles = MyVehiclesService.getNotAssignedVehicles();
     
-    function datePickHandler():void {
+    function datePickHandler(): void {
 
     }
     
@@ -42,7 +42,7 @@ const AssignmentTabs = () => {
                         <div className="d-lg-flex align-items-center justify-content-between">
                             <div className="d-md-flex align-items-center event-tabs-selectbox py-3">
                                 <Select
-                                    className="me-md-2 me-0 mb-3 mb-md-0"
+                                    className="me-md-2 me-0 mb-3 mb-md-0 status-basic"
                                     options={options1}
                                     isSearchable={true}
                                     id="vehicle-selector"
@@ -54,9 +54,9 @@ const AssignmentTabs = () => {
                                     }}
                                 />
                                 <DatePicker
-                                    className="input"
+                                    className="input status-basic"
                                     placeholderText="Enter date"
-                                    readOnly={true}
+                                    readOnly={false}
                                     onChange={datePickHandler}
                                 />
                             </div>
@@ -124,9 +124,9 @@ const AssignmentTabs = () => {
                                     }}
                                 />
                                 <DatePicker
-                                    className="input"
+                                    className="input status-basic"
                                     placeholderText="Enter date"
-                                    readOnly={true}
+                                    readOnly={false}
                                     onChange={datePickHandler}
                                 />
                             </div>
