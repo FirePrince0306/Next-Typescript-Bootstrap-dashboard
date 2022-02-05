@@ -34,6 +34,10 @@ input {
   background-color: #09766C;
 }
 
+.checkbox input[type="checkbox"]:checked + .wrapper.border-warning {
+  background-color: #DB9438;
+}
+
 .checkbox input[type="checkbox"]:checked + .wrapper svg {
   display: block;
 }

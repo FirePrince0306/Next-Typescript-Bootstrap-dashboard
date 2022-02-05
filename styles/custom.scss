@@ -109,6 +109,10 @@ body {
     color: #37bc7f !important;
 }
 
+.text-alternate {
+    color: #FBFDFF;
+}
+
 .bg-default {
     background-color: $sidebar-bg-color;
 }
@@ -119,6 +123,19 @@ body {
 
 .bg-pink {
     background-color:#FEF3F2;
+}
+
+.bg-warning {
+    background-color: #ffb94d !important;
+}
+
+.bg-success {
+    background-color: #37bc7f !important;
+}
+
+.size-medium {
+    font-size: .875rem;
+    line-height: 1rem;
 }
 
 .size-xl-medium {
@@ -149,6 +166,17 @@ body {
         font-size: .75rem;
         line-height: 1rem;
         padding: .4375rem .875rem;
+    }
+
+    &.status-basic {
+        background-color: #E7EDF4;
+        border-color: #E7EDF4;
+        color: #414D6A;
+        
+        &:hover {
+            background-color: #f3f6f9;
+            border-color: #f3f6f9;
+        }
     }
 
     &.size-xl-tiny {

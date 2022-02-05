@@ -66,7 +66,7 @@ const Sidebar: React.FC<SidebarProps>  = ({ collapsed, toggled, handleToggleSide
                         className={`${router.asPath.includes('maintenance') ? 'active' : ''}`}
                         icon={<AiFillSetting />}
                     >
-                        <MenuItem>Maintenance Planner</MenuItem>
+                        <MenuItem><ActiveLink path="maintenance/maintenance-planner"><a href="/maintenance/maintenance-planner">Maintenance Planner</a></ActiveLink></MenuItem>
                         <MenuItem>History</MenuItem>
                     </SubMenu>
                     <MenuItem
