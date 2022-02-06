@@ -67,7 +67,7 @@ const Sidebar: React.FC<SidebarProps>  = ({ collapsed, toggled, handleToggleSide
                         icon={<AiFillSetting />}
                     >
                         <MenuItem><ActiveLink path="maintenance/maintenance-planner"><a href="/maintenance/maintenance-planner">Maintenance Planner</a></ActiveLink></MenuItem>
-                        <MenuItem>History</MenuItem>
+                        <MenuItem><ActiveLink path="maintenance/history"><a href="/maintenance/history">History</a></ActiveLink></MenuItem>
                     </SubMenu>
                     <MenuItem
                         icon={<HiChartPie />}

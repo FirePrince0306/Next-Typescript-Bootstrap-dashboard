@@ -86,7 +86,7 @@ const MaintenancePlanner = () => {
                     </div>                    
                 </div>
 
-                <div className="p-3 maintenance-schedule">
+                <div className="m-3 bg-grey maintenance-schedule">
                     <div className="border border-1 rounded-3 bg-white mb-3 mb-md-0">
                         <div className="d-flex align-items-center justify-content-between p-3">
                             <div className="d-flex align-items-center">
@@ -276,7 +276,7 @@ const MaintenancePlanner = () => {
                                     <tr>  
                                         <td className="slot">
                                             <div className="d-flex">
-                                            <p className="text3 text-hint paragraph-2">2 PM</p>
+                                                <p className="text3 text-hint paragraph-2">2 PM</p>
                                             </div>
                                         </td>  
                                         <td className="slot"></td>
