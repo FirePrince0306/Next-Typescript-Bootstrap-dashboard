@@ -79,7 +79,7 @@ const VehicleEvent: React.FC<VehicleEventProps> = ({item}: VehicleEventProps) =>
                 </div>
 
                 <div className="d-flex align-items-center" style={{width: "21%"}}>
-                    <Image className="image" src={require(`~/public/images/Group@2x9.png`).default.src} width="42" height="42" />
+                    <Image className="image" alt="icon" src={require(`~/public/images/Group@2x9.png`).default.src} width="42" height="42" />
                     <div className="d-flex align-items-center ms-3">
                         <span className="text3 text-basic subtitle">{item.vehicle}</span>
                         <FaAngleRight className="ms-3 text-hint" />

@@ -9,7 +9,7 @@ const KeyIndicators = () => {
                     <div className="w-50 me-3">
                         <div className="d-flex align-items-center py-2 px-3 border border-1 rounded-3 mb-3">
                             <div className="p-2 me-3" style={{backgroundColor: "#ECF6F4"}}>
-                                <Image className="image" src={require("~/public/images/motor@3x-green.svg").default.src} width="30" height="30" />
+                                <Image className="image" alt="icon" src={require("~/public/images/motor@3x-green.svg").default.src} width="30" height="30" />
                             </div>
                             <div>
                                 <h6 className="heading text-basic mb-0">Ok</h6>
@@ -19,7 +19,7 @@ const KeyIndicators = () => {
 
                         <div className="d-flex align-items-center py-2 px-3 border border-1 rounded-3">
                             <div className="p-2 me-3" style={{backgroundColor: "#ECF6F4"}}>
-                                <Image className="image" src={require("~/public/images/motor@3x-green.svg").default.src} width="30" height="30" />
+                                <Image className="image" alt="icon" src={require("~/public/images/motor@3x-green.svg").default.src} width="30" height="30" />
                             </div>
                             <div>
                                 <h6 className="heading text-basic mb-0">Ok</h6>
@@ -31,7 +31,7 @@ const KeyIndicators = () => {
                     <div className="w-50">
                         <div className="d-flex align-items-center py-2 px-3 border border-1 rounded-3 mb-3">
                             <div className="p-2 me-3" style={{backgroundColor: "#ECF6F4"}}>
-                                <Image className="image" src={require("~/public/images/motor@3x-green.svg").default.src} width="30" height="30" />
+                                <Image className="image" alt="icon" src={require("~/public/images/motor@3x-green.svg").default.src} width="30" height="30" />
                             </div>
                             <div>
                                 <h6 className="heading text-basic mb-0">Ok</h6>
@@ -41,7 +41,7 @@ const KeyIndicators = () => {
 
                         <div className="d-flex align-items-center py-2 px-3 border border-1 rounded-3">
                             <div className="p-2 me-3" style={{backgroundColor: "#ECF6F4"}}>
-                                <Image className="image" src={require("~/public/images/motor@3x-green.svg").default.src} width="30" height="30" />
+                                <Image className="image" alt="icon" src={require("~/public/images/motor@3x-green.svg").default.src} width="30" height="30" />
                             </div>
                             <div>
                                 <h6 className="heading text-basic mb-0">Ok</h6>

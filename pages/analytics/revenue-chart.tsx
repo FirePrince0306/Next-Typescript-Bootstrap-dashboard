@@ -116,7 +116,7 @@ const RevenueChart = () => {
                     </div>
 
                     <div className="d-flex align-items-start flex-column my-2 my-md-0">
-                        <span className="text-hint caption">Last year's income</span>
+                        <span className="text-hint caption">Last year&apos;s income</span>
                         <div className="divider4"></div>
                     </div>
                 </div>

@@ -67,7 +67,7 @@ const TripOverviewCard: React.FC<TripOverviewCardProps> = ({item}: TripOverviewC
                     <span className="text-info subtitle-2">SCHEDULED</span>
                 </div>
                 <div className="d-flex" style={{width: "21%"}}>
-                    <Image className="image" src={getImageSource().default.src} width="42" height="42" />
+                    <Image className="image" alt="icon" src={getImageSource().default.src} width="42" height="42" />
                     <div className="d-flex flex-column ms-2 ps-1">
                         <span className="heading text-basic fw-bold">{item.name}</span>
                         <span className="text-hint caption-2">{item.type.toUpperCase()}</span>

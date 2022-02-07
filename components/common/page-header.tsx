@@ -48,7 +48,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ handleCollapsedChange, handleTo
                 <div className="nav-right d-flex align-items-center">
                     <div className="divider d-none d-md-block"></div>
                     <div className="user-avatar rounded-circle overflow-hidden">
-                        <Image className="image" src={require("~/public/images/man.jpg").default.src} width="46" height="46" />
+                        <Image className="image" alt="icon" src={require("~/public/images/man.jpg").default.src} width="46" height="46" />
                     </div>
                     <div className="user-info text-white">
                         <h5 className="user-name caption mb-0">User Name</h5>

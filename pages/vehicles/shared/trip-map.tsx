@@ -23,7 +23,7 @@ function DisplayPosition({ map }: any) {
         if(map !== null) {
             map.addControl(leaflet.control.zoom({ position: 'bottomright'}))
         }
-    }, []);
+    });
 
     return (
         <></>

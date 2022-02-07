@@ -10,7 +10,7 @@ const CommonInformation: React.FC<CommonInformationProps> = ({}: CommonInformati
         <>
             <div className="bg-white border border-1 rounded-3 common-information">
                 <div className="d-flex align-items-center pt-4 px-4 ms-1 pb-1">
-                    <Image className="image me-3" src={require("~/public/images/Group@2x32.png").default.src} width="60" height="60" />
+                    <Image className="image me-3" alt="icon" src={require("~/public/images/Group@2x32.png").default.src} width="60" height="60" />
                     <div>
                         <h5 className="heading text-basic mb-0">Vehicle Name</h5>
                         <div>
@@ -49,14 +49,14 @@ const CommonInformation: React.FC<CommonInformationProps> = ({}: CommonInformati
                     <div className="px-2">
                         <div className="my-2 p-2 border border-1 rounded-3 d-flex flex-column align-items-center justify-content-center">
                             <div className="d-flex">
-                                <Image className="image me-1" src={require('~/public/images/fuel@3x.svg').default.src} width="14" height="14" alt="icon" />
+                                <Image className="image me-1" alt="icon" src={require('~/public/images/fuel@3x.svg').default.src} width="14" height="14" />
                                 <span className="text text-hint caption">Fuel Consumption</span>
                             </div>
                             <span className="pt-1 text-basic subtitle-2">15L / 100km</span>
                         </div>
                         <div className="my-2 p-2 border border-1 rounded-3 d-flex flex-column align-items-center justify-content-center">
                             <div className="d-flex">
-                                <Image className="image me-1" src={require('~/public/images/speed-1@3x.svg').default.src} width="14" height="14" alt="icon" />
+                                <Image className="image me-1" alt="icon" src={require('~/public/images/speed-1@3x.svg').default.src} width="14" height="14" />
                                 <span className="text text-hint caption">Average Speed</span>
                             </div>
                             <span className="pt-1 text-basic subtitle-2">100kmh</span>

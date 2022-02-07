@@ -75,7 +75,7 @@ const VehicleAssigned: React.FC<VehicleAssignedProps> = ({item}: VehicleAssigned
                 </div>
 
                 <div className="d-flex align-items-center" style={{width: "22.6%"}}>
-                    <Image className="image" src={getImageSource().default.src} width="42" height="42" />
+                    <Image className="image" alt="icon" src={getImageSource().default.src} width="42" height="42" />
                     <div className="d-flex flex-column ms-2 ps-1">
                         <h6 className="heading text-basic fw-bold mb-0">{item.name}</h6>
                         <span className="text-hint caption-2">{item.type}</span>
