@@ -9,7 +9,7 @@ const KeyIndicators = () => {
                             <div className="p-2 me-3" style={{backgroundColor: "#ECF6F4"}}>
                                 <img className="image" src={require("~/public/images/motor@3x-green.svg").default.src} width="30" height="30" />
                             </div>
-                            <div className="">
+                            <div>
                                 <h6 className="heading text-basic mb-0">Ok</h6>
                                 <p className="text text-hint paragraph mb-0">Engine</p>
                             </div>
@@ -19,7 +19,7 @@ const KeyIndicators = () => {
                             <div className="p-2 me-3" style={{backgroundColor: "#ECF6F4"}}>
                                 <img className="image" src={require("~/public/images/motor@3x-green.svg").default.src} width="30" height="30" />
                             </div>
-                            <div className="">
+                            <div>
                                 <h6 className="heading text-basic mb-0">Ok</h6>
                                 <p className="text text-hint paragraph mb-0">Engine</p>
                             </div>
@@ -31,7 +31,7 @@ const KeyIndicators = () => {
                             <div className="p-2 me-3" style={{backgroundColor: "#ECF6F4"}}>
                                 <img className="image" src={require("~/public/images/motor@3x-green.svg").default.src} width="30" height="30" />
                             </div>
-                            <div className="">
+                            <div>
                                 <h6 className="heading text-basic mb-0">Ok</h6>
                                 <p className="text text-hint paragraph mb-0">Engine</p>
                             </div>
@@ -41,7 +41,7 @@ const KeyIndicators = () => {
                             <div className="p-2 me-3" style={{backgroundColor: "#ECF6F4"}}>
                                 <img className="image" src={require("~/public/images/motor@3x-green.svg").default.src} width="30" height="30" />
                             </div>
-                            <div className="">
+                            <div>
                                 <h6 className="heading text-basic mb-0">Ok</h6>
                                 <p className="text text-hint paragraph mb-0">Engine</p>
                             </div>

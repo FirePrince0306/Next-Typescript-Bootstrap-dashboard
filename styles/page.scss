@@ -704,3 +704,62 @@ table .slot {
 	min-width: 98px;
 	height: 64px;
 }
+
+/* Analytics page */
+.analytics {
+	#vehicle-selector, .react-datepicker-wrapper {
+		min-width: 208px;
+	}
+
+	.react-datepicker-wrapper input {
+		height: 40px;
+	}
+
+	.indicator {
+		width: 50%;
+	}
+}
+
+.revenue-chart {
+	width: calc(63% - 8px);
+}
+
+.expenses-chart {
+	width: calc(37% - 8px);
+}
+
+.co2-chart {
+	width: calc(42% - 8px)
+}
+
+.trips-chart {
+	width: calc(58% - 8px);
+}
+
+.idle-chart,
+.fuel-chart {
+	width: calc(32% - 8px);
+}
+
+.distance-chart {
+	width: calc(36% - 8px);
+}
+
+.divider4 {
+	width: 20px;
+    height: 2px;
+    margin: 4px 0;
+    background-color: #CDD5DE;
+}
+
+@media (max-width: 992px) {
+	.revenue-chart,
+	.expenses-chart,
+	.co2-chart,
+	.trips-chart,
+	.idle-chart,
+	.fuel-chart,
+	.distance-chart {
+		width: 100%;
+	}
+}

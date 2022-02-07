@@ -29,7 +29,7 @@ const Maintenance: React.FC<MaintenanceProps> = ({}: MaintenanceProps) => {
                     <div className="p-2 me-3 bg-pink">
                         <img className="image" src={require("~/public/images/brake@3x-red.svg").default.src} width="30" height="30" />
                     </div>
-                    <div className="">
+                    <div>
                         <span className="text text-basic subtitle-2 mb-0">Brakes Repair</span>
                         <p className="text1 text-hint paragraph-2 mb-0">2 mounth overdue</p>
                     </div>
@@ -41,7 +41,7 @@ const Maintenance: React.FC<MaintenanceProps> = ({}: MaintenanceProps) => {
                     <div className="p-2 me-3 bg-pink">
                         <img className="image" src={require("~/public/images/filter@3x-red.svg").default.src} width="30" height="30" />
                     </div>
-                    <div className="">
+                    <div>
                         <span className="text2 text-basic subtitle-2 mb-0">Filter Replacement</span>
                         <p className="text3 text-hint paragraph-2 mb-0">1 mounth overdue</p>
                     </div>
@@ -53,7 +53,7 @@ const Maintenance: React.FC<MaintenanceProps> = ({}: MaintenanceProps) => {
                     <div className="p-2 me-3 bg-pink">
                         <img className="image" src={require("~/public/images/lift@3x-red.svg").default.src} width="30" height="30" />
                     </div>
-                    <div className="">
+                    <div>
                         <span className="text4 text-basic subtitle-2 mb-0">Planned Inspection</span>
                         <p className="text5 text-hint paragraph-2 mb-0">4 mounth overdue</p>
                     </div>
@@ -65,7 +65,7 @@ const Maintenance: React.FC<MaintenanceProps> = ({}: MaintenanceProps) => {
                     <div className="p-2 me-3 bg-pink">
                         <img className="image" src={require("~/public/images/tire@3x-red.svg").default.src} width="30" height="30" />
                     </div>
-                    <div className="">
+                    <div>
                         <span className="text4 text-basic subtitle-2 mb-0">Rotate Tires</span>
                         <p className="text5 text-hint paragraph-2 mb-0">3 mounth overdue</p>
                     </div>

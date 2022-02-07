@@ -71,7 +71,7 @@ const Sidebar: React.FC<SidebarProps>  = ({ collapsed, toggled, handleToggleSide
                     </SubMenu>
                     <MenuItem
                         icon={<HiChartPie />}
-                    >Analytics</MenuItem>
+                    ><ActiveLink path="analytics"><a href="/analytics">Analytics</a></ActiveLink></MenuItem>
                 </Menu>
             </SidebarContent>
         </ProSidebar>

@@ -1,3 +1,5 @@
+import {useState} from 'react';
+
 import { GoAlert } from 'react-icons/go';
 import { AiOutlineCheck } from 'react-icons/ai';
 import { FaCheckCircle, FaInfoCircle, FaAngleRight, FaRegStar } from 'react-icons/fa';
@@ -9,8 +11,6 @@ import {Event} from '~/components/features/common';
 export type VehicleEventProps = {
     item: Event
 };
-
-import {useState} from 'react';
 
 const VehicleEvent: React.FC<VehicleEventProps> = ({item}: VehicleEventProps) => {
     const [isChecked, setIsChecked]=useState(false);
@@ -45,7 +45,7 @@ const VehicleEvent: React.FC<VehicleEventProps> = ({item}: VehicleEventProps) =>
                     </span>
                 </div>
 
-                <div className="" style={{width: "16%"}}>
+                <div style={{width: "16%"}}>
                     {
                         item.status === 'success' ? 
                             <div className="d-inline-flex align-items-center border border-1 rounded-2 py-1 px-2">
@@ -85,7 +85,7 @@ const VehicleEvent: React.FC<VehicleEventProps> = ({item}: VehicleEventProps) =>
                     </div>
                 </div>
 
-                <div className="" style={{width: "11.2%"}}>
+                <div style={{width: "11.2%"}}>
                     <button className="button size-xl-medium appearance-filled size-medium status-control shape-rectangle icon-start transitions">
                         <FaRegStar className="text-hint fs-5" />
                         <span className="d-none">Button</span>

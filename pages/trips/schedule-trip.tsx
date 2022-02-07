@@ -50,13 +50,11 @@ const options3 =  [
 const SchedultTrip = () => {
     const [isChecked, setIsChecked]=useState(false);
 
-    function datePickHandler(): void {
+    function datePickHandler(): void {}
 
-    }
+    function checkHandler(): void {}
 
-    function checkHandler(): void {
-
-    }
+    function radioChangeHandler(): void {}
 
     return (
         <div className="schedule-trip bg-grey">
@@ -170,6 +168,16 @@ const SchedultTrip = () => {
                             <div className="w-50 me-3">
                                 <label className="text-hint label">VEHICLE TYPE</label>
                                 
+                                <div className="custom_radio">
+                                    <input type="radio" id="truck" name="custom-radio" onChange={radioChangeHandler}/>
+                                    <label htmlFor="truck" className="text-basic label">Truck</label>
+                                    <br />
+                                    <input type="radio" id="van" name="custom-radio" onChange={radioChangeHandler}/>
+                                    <label htmlFor="van" className="text-basic label">Van</label>
+                                    <br />
+                                    <input type="radio" id="car" name="custom-radio" onChange={radioChangeHandler}/>
+                                    <label htmlFor="car" className="text-basic label">Car</label>
+                                </div>
                             </div>
                             <div className="w-50">
                                 <label className="text-hint label">SELECT VEHICLE</label>

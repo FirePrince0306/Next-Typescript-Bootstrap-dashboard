@@ -8,6 +8,7 @@ import { RiCalendarTodoLine } from 'react-icons/ri';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 
 import MaintenanceVisit from './shared/maintenance-visit';
+import MaintenanceModal from '~/components/common/maintenance-modal';
 
 const MaintenancePlanner = () => {
     const [isChecked1, setIsChecked1]=useState(false);
@@ -15,6 +16,11 @@ const MaintenancePlanner = () => {
     const [isChecked3, setIsChecked3]=useState(false);
     const [isChecked4, setIsChecked4]=useState(false);
     const [startDate, setStartDate] = useState(new Date());
+    const [modalState, setModalState]=useState(false);
+    
+    function modalHandler(): void {
+        setModalState(!modalState);
+    }
 
     function checkHandler(): void {
 
@@ -97,7 +103,7 @@ const MaintenancePlanner = () => {
                             </div>
 
                             <div className="d-flex align-items-center">
-                                <button className="button size-xl-medium appearance-filled fw-bold size-medium status-primary shape-rectangle icon-start transitions me-2">
+                                <button className="button size-xl-medium appearance-filled fw-bold size-medium status-primary shape-rectangle icon-start transitions me-2" onClick={modalHandler}>
                                     <RiCalendarTodoLine className="fw-bold fs-5 me-1" />
                                     <span>schedule</span>
                                 </button>
@@ -105,6 +111,7 @@ const MaintenancePlanner = () => {
                                     <AiOutlineExpandAlt className="fw-bold fs-5" />
                                     <span className="d-none">Button</span>
                                 </button>
+                                <MaintenanceModal modalHandler={modalHandler} state={modalState}/>
                             </div>
                         </div>
 
@@ -153,9 +160,9 @@ const MaintenancePlanner = () => {
                                         <td className="slot">
                                             <div className="d-flex">
                                                 <MaintenanceVisit vehicleName={"AD 2456"} workshop={true} />
-                                                <div className="">
+                                                <div>
                                                     <button className="button size-xl-tiny appearance-filled size-medium status-control shape-rectangle icon-start transitions">
-                                                        <BsThreeDotsVertical className=""/>
+                                                        <BsThreeDotsVertical/>
                                                         <span className="d-none">Button</span>
                                                     </button>
                                                 </div>
@@ -164,9 +171,9 @@ const MaintenancePlanner = () => {
                                         <td className="slot"></td>
                                         <td className="slot">
                                             <div className="d-flex"><MaintenanceVisit vehicleName={"AF 2415"} workshop={false} />
-                                                <div className="">
+                                                <div>
                                                     <button className="button size-xl-tiny appearance-filled size-medium status-control shape-rectangle icon-start transitions">
-                                                        <BsThreeDotsVertical className=""/>
+                                                        <BsThreeDotsVertical/>
                                                         <span className="d-none">Button</span>
                                                     </button>
                                                 </div>
@@ -186,9 +193,9 @@ const MaintenancePlanner = () => {
                                         <td className="slot">
                                             <div className="d-flex">
                                                 <MaintenanceVisit vehicleName={"FF 5863"} workshop={false} />
-                                                <div className="">
+                                                <div>
                                                     <button className="button size-xl-tiny appearance-filled size-medium status-control shape-rectangle icon-start transitions">
-                                                        <BsThreeDotsVertical className=""/>
+                                                        <BsThreeDotsVertical/>
                                                         <span className="d-none">Button</span>
                                                     </button>
                                                 </div>
@@ -207,9 +214,9 @@ const MaintenancePlanner = () => {
                                         <td className="slot">
                                             <div className="d-flex">
                                                 <MaintenanceVisit vehicleName={"DF 2315"} workshop={true} />
-                                                <div className="">
+                                                <div>
                                                     <button className="button size-xl-tiny appearance-filled size-medium status-control shape-rectangle icon-start transitions">
-                                                        <BsThreeDotsVertical className=""/>
+                                                        <BsThreeDotsVertical/>
                                                         <span className="d-none">Button</span>
                                                     </button>
                                                 </div>
@@ -239,9 +246,9 @@ const MaintenancePlanner = () => {
                                         <td className="slot">
                                             <div className="d-flex">
                                                 <MaintenanceVisit vehicleName={"BN 2461"} workshop={false} />
-                                                <div className="">
+                                                <div>
                                                     <button className="button size-xl-tiny appearance-filled size-medium status-control shape-rectangle icon-start transitions">
-                                                        <BsThreeDotsVertical className=""/>
+                                                        <BsThreeDotsVertical/>
                                                         <span className="d-none">Button</span>
                                                     </button>
                                                 </div>
@@ -263,9 +270,9 @@ const MaintenancePlanner = () => {
                                         <td className="slot">
                                             <div className="d-flex">
                                                 <MaintenanceVisit vehicleName={"VB 3261"} workshop={true} />
-                                                <div className="">
+                                                <div>
                                                     <button className="button size-xl-tiny appearance-filled size-medium status-control shape-rectangle icon-start transitions">
-                                                        <BsThreeDotsVertical className=""/>
+                                                        <BsThreeDotsVertical/>
                                                         <span className="d-none">Button</span>
                                                     </button>
                                                 </div>
@@ -310,9 +317,9 @@ const MaintenancePlanner = () => {
                                         <td className="slot">
                                             <div className="d-flex">
                                                 <MaintenanceVisit vehicleName={"AF 4151"} workshop={true} />
-                                                <div className="">
+                                                <div>
                                                     <button className="button size-xl-tiny appearance-filled size-medium status-control shape-rectangle icon-start transitions">
-                                                        <BsThreeDotsVertical className=""/>
+                                                        <BsThreeDotsVertical/>
                                                         <span className="d-none">Button</span>
                                                     </button>
                                                 </div>
@@ -331,9 +338,9 @@ const MaintenancePlanner = () => {
                                         <td className="slot">
                                             <div className="d-flex">
                                                 <MaintenanceVisit vehicleName={"FG 1451"} workshop={true} />
-                                                <div className="">
+                                                <div>
                                                     <button className="button size-xl-tiny appearance-filled size-medium status-control shape-rectangle icon-start transitions">
-                                                        <BsThreeDotsVertical className=""/>
+                                                        <BsThreeDotsVertical/>
                                                         <span className="d-none">Button</span>
                                                     </button>
                                                 </div>
