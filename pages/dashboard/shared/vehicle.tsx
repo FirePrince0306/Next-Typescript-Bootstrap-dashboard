@@ -1,5 +1,6 @@
 import { IoNavigate } from 'react-icons/io5';
 import { GoAlert } from 'react-icons/go';
+import Image from 'next/image';
 
 import { Trip, VehicleTripStatus } from "~/components/features/common";
 import { TripsService } from '~/components/utils/trips.service';
@@ -45,7 +46,7 @@ const VehicleCard: React.FC<VehicleProps> = ({trip, selected, handleActiveVehicl
                         }]))
                 }}>
                 <div className="vehicle-image d-flex align-items-center"> 
-                    <img className="image" src={getImageSource().default.src} width="52" height="52" alt="vehicle-avatar" />
+                    <Image className="image" src={getImageSource().default.src} width="52" height="52" alt="vehicle-avatar" />
                 </div>
                 <div className="vehicle-content">
                     <h5 className="heading text-basic">{trip.vehicle.name}</h5>

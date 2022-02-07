@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import { AiOutlineCheck } from 'react-icons/ai';
 import { FiChevronDown } from 'react-icons/fi';
 import { BsThreeDotsVertical } from 'react-icons/bs';
@@ -33,7 +35,7 @@ const HistoryListItem: React.FC<HistoryListItemProps> = ({vehicleName, cost, sta
                 </div>
 
                 <div className="d-flex align-items-center" style={{width: "22.6%"}}>
-                    <img className="image" src={iconSrc()} width="42" height="42" />
+                    <Image className="image" src={iconSrc()} width="42" height="42" />
                     <div className="ms-2 ps-1">
                         <h6 className="heading text-basic fw-bold mb-0">{vehicleName}</h6>
                         <span className={`subtitle-2 me-1 ${status === 'OUT OF SERVICE' ? 'text-danger' : 'text-primary'}`}>{status}</span>

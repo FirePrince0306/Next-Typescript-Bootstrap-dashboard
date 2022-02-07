@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { MapContainer, TileLayer, Marker, Polyline, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import * as leaflet from 'leaflet';
+import Image from 'next/image';
 
 import { GoAlert } from 'react-icons/go';
 
@@ -91,14 +92,14 @@ const Map: React.FC<MapProps> = ({ data }) => {
                                                 </div>
                                                 <div className="d-flex flex-column justify-content-center align-items-center border border-1 rounded-3 mb-0">
                                                     <div className="d-flex">
-                                                        <img className="image me-1" src={require('~/public/images/speed-1@3x.svg').default.src} width="14" height="14" />
+                                                        <Image className="image me-1" src={require('~/public/images/speed-1@3x.svg').default.src} width="14" height="14" />
                                                         <span className="text text-hint caption">Average Speed</span>
                                                     </div>
                                                     <span className="pt-1 text-basic subtitle-2">100kmh</span>
                                                 </div>
                                                 <div className="d-flex flex-column justify-content-center align-items-center border border-1 rounded-3 mb-0">
                                                     <div className="d-flex">
-                                                        <img className="image me-1" src={require('~/public/images/fuel@3x.svg').default.src} width="14" height="14" />
+                                                        <Image className="image me-1" src={require('~/public/images/fuel@3x.svg').default.src} width="14" height="14" />
                                                         <span className="text text-hint caption">Fuel Consumption</span>
                                                     </div>
                                                     <span className="pt-1 text-basic subtitle-2">15L / 100km</span>

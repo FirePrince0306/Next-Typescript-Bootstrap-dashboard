@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import Image from 'next/image';
 
 import { GoAlert } from 'react-icons/go';
 import { AiOutlineCheck } from 'react-icons/ai';
@@ -78,7 +79,7 @@ const VehicleEvent: React.FC<VehicleEventProps> = ({item}: VehicleEventProps) =>
                 </div>
 
                 <div className="d-flex align-items-center" style={{width: "21%"}}>
-                    <img className="image" src={require(`~/public/images/Group@2x9.png`).default.src} width="42" height="42" />
+                    <Image className="image" src={require(`~/public/images/Group@2x9.png`).default.src} width="42" height="42" />
                     <div className="d-flex align-items-center ms-3">
                         <span className="text3 text-basic subtitle">{item.vehicle}</span>
                         <FaAngleRight className="ms-3 text-hint" />

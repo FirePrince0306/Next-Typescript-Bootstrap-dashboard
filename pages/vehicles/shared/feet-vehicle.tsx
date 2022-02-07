@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import ReactEcharts from "echarts-for-react";
+import Image from 'next/image';
 
 import { GoCircleSlash } from 'react-icons/go';
 import { AiOutlineCheck } from 'react-icons/ai';
@@ -112,7 +113,7 @@ const FeetVehicle: React.FC<FeetVehicleProps> = ({item}: FeetVehicleProps) => {
                 </div>
 
                 <div className="d-flex" style={{width: "22.6%"}}>
-                    <img className="image" src={getImageSource().default.src} width="42" height="42" />
+                    <Image className="image" src={getImageSource().default.src} width="42" height="42" />
                     <div className="d-flex flex-column ms-2 ps-1">
                         <span className="heading text-basic fw-bold">{item.name}</span>
                         <span className="text-hint caption-2">{item.vin}</span>

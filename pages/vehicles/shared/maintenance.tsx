@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export type MaintenanceProps = {
 };
 
@@ -27,7 +29,7 @@ const Maintenance: React.FC<MaintenanceProps> = ({}: MaintenanceProps) => {
 
                 <div className="d-flex align-items-center py-3 ps-3 ms-1">
                     <div className="p-2 me-3 bg-pink">
-                        <img className="image" src={require("~/public/images/brake@3x-red.svg").default.src} width="30" height="30" />
+                        <Image className="image" src={require("~/public/images/brake@3x-red.svg").default.src} width="30" height="30" />
                     </div>
                     <div>
                         <span className="text text-basic subtitle-2 mb-0">Brakes Repair</span>
@@ -39,7 +41,7 @@ const Maintenance: React.FC<MaintenanceProps> = ({}: MaintenanceProps) => {
 
                 <div className="d-flex align-items-center py-3 ps-3 ms-1">
                     <div className="p-2 me-3 bg-pink">
-                        <img className="image" src={require("~/public/images/filter@3x-red.svg").default.src} width="30" height="30" />
+                        <Image className="image" src={require("~/public/images/filter@3x-red.svg").default.src} width="30" height="30" />
                     </div>
                     <div>
                         <span className="text2 text-basic subtitle-2 mb-0">Filter Replacement</span>
@@ -51,7 +53,7 @@ const Maintenance: React.FC<MaintenanceProps> = ({}: MaintenanceProps) => {
 
                 <div className="d-flex align-items-center py-3 ps-3 ms-1">
                     <div className="p-2 me-3 bg-pink">
-                        <img className="image" src={require("~/public/images/lift@3x-red.svg").default.src} width="30" height="30" />
+                        <Image className="image" src={require("~/public/images/lift@3x-red.svg").default.src} width="30" height="30" />
                     </div>
                     <div>
                         <span className="text4 text-basic subtitle-2 mb-0">Planned Inspection</span>
@@ -63,7 +65,7 @@ const Maintenance: React.FC<MaintenanceProps> = ({}: MaintenanceProps) => {
 
                 <div className="d-flex align-items-center py-3 ps-3 ms-1">
                     <div className="p-2 me-3 bg-pink">
-                        <img className="image" src={require("~/public/images/tire@3x-red.svg").default.src} width="30" height="30" />
+                        <Image className="image" src={require("~/public/images/tire@3x-red.svg").default.src} width="30" height="30" />
                     </div>
                     <div>
                         <span className="text4 text-basic subtitle-2 mb-0">Rotate Tires</span>

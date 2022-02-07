@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import { Trip } from "~/components/features/common";
 
 import { GoAlert, GoClock } from 'react-icons/go';
@@ -72,14 +74,14 @@ const TripDetails: React.FC<TripDetailsProps> = ({trip, handleActiveVehicleId, h
                 <div className="d-flex info">
                     <div className="w-50 border border-1 rounded-3 d-flex flex-column align-items-center justify-content-center">
                         <div className="d-flex">
-                            <img className="image me-1" src={require('~/public/images/fuel@3x.svg').default.src} width="14" height="14" alt="icon" />
+                            <Image className="image me-1" src={require('~/public/images/fuel@3x.svg').default.src} width="14" height="14" alt="icon" />
                             <span className="text text-hint caption">Fuel Consumption</span>
                         </div>
                         <span className="pt-1 text-basic subtitle-2">15L / 100km</span>
                     </div>
                     <div className="w-50 border border-1 rounded-3 d-flex flex-column align-items-center justify-content-center">
                         <div className="d-flex">
-                            <img className="image me-1" src={require('~/public/images/speed-1@3x.svg').default.src} width="14" height="14" alt="icon" />
+                            <Image className="image me-1" src={require('~/public/images/speed-1@3x.svg').default.src} width="14" height="14" alt="icon" />
                             <span className="text text-hint caption">Average Speed</span>
                         </div>
                         <span className="pt-1 text-basic subtitle-2">100kmh</span>

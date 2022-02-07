@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import Indicator from '~/pages/dashboard/shared/indicator';
 import Expenses from '~/pages/dashboard/shared/expenses';
 import VehicleCondition from '~/pages/dashboard/shared/vehicle-condition';
@@ -351,7 +353,7 @@ const RealTimeData = () => {
                         <div className="critical-card">
                             <div className="d-flex mb-10">
                                 <div className="critical-card-icon d-flex align-items-center justify-content-center me-10">
-                                    <img className="image" src={require('~/public/images/gas@3x-red.svg').default.src} width="24" height="30" alt="icon" />
+                                    <Image className="image" src={require('~/public/images/gas@3x-red.svg').default.src} width="24" height="30" alt="icon" />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <h5 className="heading text-danger mb-0">5</h5>
@@ -367,7 +369,7 @@ const RealTimeData = () => {
                         <div className="critical-card">
                             <div className="d-flex mb-10">
                                 <div className="critical-card-icon d-flex align-items-center justify-content-center me-10">
-                                    <img className="image" src={require('~/public/images/speed@3x-red.svg').default.src} width="24" height="30" alt="icon" />
+                                    <Image className="image" src={require('~/public/images/speed@3x-red.svg').default.src} width="24" height="30" alt="icon" />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <h5 className="heading1 text-danger mb-0">3</h5>
@@ -385,7 +387,7 @@ const RealTimeData = () => {
                         <div className="critical-card">
                             <div className="d-flex mb-10">
                                 <div className="critical-card-icon d-flex align-items-center justify-content-center me-10">
-                                    <img className="image" src={require('~/public/images/filter@3x-red.svg').default.src} width="24" height="30" alt="icon" />
+                                    <Image className="image" src={require('~/public/images/filter@3x-red.svg').default.src} width="24" height="30" alt="icon" />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <h5 className="heading2 text-danger mb-0">10</h5>
@@ -401,7 +403,7 @@ const RealTimeData = () => {
                         <div className="critical-card">
                             <div className="d-flex mb-10">
                                 <div className="critical-card-icon d-flex align-items-center justify-content-center me-10">
-                                    <img className="image" src={require('~/public/images/motor@3x-red.svg').default.src} width="24" height="30" alt="icon" />
+                                    <Image className="image" src={require('~/public/images/motor@3x-red.svg').default.src} width="24" height="30" alt="icon" />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <h5 className="heading3 text-danger mb-0">1</h5>
