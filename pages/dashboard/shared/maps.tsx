@@ -1,19 +1,18 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo, useCallback } from 'react';
 import { MapContainer, TileLayer, Marker, Polyline, Popup } from 'react-leaflet';
-import L from 'leaflet';
-import * as leaflet from 'leaflet';
 import Image from 'next/image';
 
 import { GoAlert } from 'react-icons/go';
 
 export type MapProps = {
-  data: any
+    data: any
 }
 
+const L = typeof window === 'undefined' ? {} : require('leaflet');
 const center: L.LatLngExpression | undefined = [38.991709, -91.886109];
 const zoom: number = 4;
 
-function DisplayPosition({ map, data }: any) {    
+function DisplayPosition({ map, data }: any) {
     useEffect(()=> {
         if(data.trip !== null)
             map.setView(data.trip.currentPosition, 7)
@@ -23,9 +22,9 @@ function DisplayPosition({ map, data }: any) {
 
     useEffect(()=> {
         if(map !== null) {
-            map.addControl(leaflet.control.zoom({ position: 'bottomright'}))
+            map.addControl(L.control.zoom({ position: 'bottomright'}));
         }
-    });
+    }, []);
 
     return (
         <></>

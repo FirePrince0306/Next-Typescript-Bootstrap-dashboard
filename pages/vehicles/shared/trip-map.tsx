@@ -1,8 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
-import * as leaflet from 'leaflet';
-import L from 'leaflet';
 import { MapContainer, TileLayer, Polyline } from 'react-leaflet';
 
+const L = typeof window === 'undefined' ? {} : require('leaflet');
 const center: L.LatLngExpression | undefined = [41.148630, -110.486021];
 const zoom: number = 7;
 
@@ -21,9 +20,9 @@ const tripCoords: [number, number][] = [
 function DisplayPosition({ map }: any) {
     useEffect(()=> {
         if(map !== null) {
-            map.addControl(leaflet.control.zoom({ position: 'bottomright'}))
+            map.addControl(L.control.zoom({ position: 'bottomright'}));
         }
-    });
+    }, []);
 
     return (
         <></>

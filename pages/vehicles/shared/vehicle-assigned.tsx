@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import Image from 'next/image';
 
 import { GoCircleSlash } from 'react-icons/go';
@@ -13,8 +14,6 @@ import {Vehicle} from '~/components/features/common';
 export type VehicleAssignedProps = {
     item: Vehicle
 };
-
-import {useState} from 'react';
 
 const VehicleAssigned: React.FC<VehicleAssignedProps> = ({item}: VehicleAssignedProps) => {
     const [isChecked, setIsChecked]=useState(false);
