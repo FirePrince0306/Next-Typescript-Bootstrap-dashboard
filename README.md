@@ -80,3 +80,12 @@ press <key>F5</key>
 [15]: https://github.com/vercel/next.js/
 [16]: https://nextjs.org/docs/deployment
 [17]: https://playwright.tech/
+
+### Install node_module 
+yarn install
+
+### Dev 
+yarn run dev
+
+### Build
+yarn run build

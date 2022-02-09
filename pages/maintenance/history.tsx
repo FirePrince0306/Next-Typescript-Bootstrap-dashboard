@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { RiCalendarTodoLine } from 'react-icons/ri';
 
-import HistoryTabs from "./shared/history-tabs";
+import HistoryTabs from "~/components/pages/maintenance/history-tabs";
 import MaintenanceModal from '~/components/common/maintenance-modal';
 
 const History = () => {

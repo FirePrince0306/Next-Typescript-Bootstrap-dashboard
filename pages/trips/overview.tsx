@@ -3,8 +3,8 @@ import Select from 'react-select';
 import { IoMdClose } from 'react-icons/io';
 import { RiCalendarTodoLine } from 'react-icons/ri';
 
-import Trips from '~/pages/trips/shared/trips';
-import TripTabs from '~/pages/trips/shared/trip-tabs';
+import Trips from '~/components/pages/trips/trips';
+import TripTabs from '~/components/pages/trips/trip-tabs';
 
 const options1 = [
     { value: 'ab-1512', label: 'AB 1512' },

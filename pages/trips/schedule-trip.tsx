@@ -47,7 +47,7 @@ const options3 =  [
     { value: 'bb2515', label: 'BB 2515' }
 ]
 
-const SchedultTrip = () => {
+const ScheduleTrip = () => {
     const [isChecked, setIsChecked]=useState(false);
 
     function datePickHandler(): void {}
@@ -289,4 +289,4 @@ const SchedultTrip = () => {
     )
 };
 
-export default SchedultTrip;
+export default ScheduleTrip;

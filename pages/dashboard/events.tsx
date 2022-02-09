@@ -1,4 +1,4 @@
-import EventTabs from "./shared/event-tabs";
+import EventTabs from "~/components/pages/dashboard/event-tabs";
 
 const Events = () => {
     return (

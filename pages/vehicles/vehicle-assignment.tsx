@@ -1,4 +1,4 @@
-import AssignmentTabs from "./shared/assignment-tabs";
+import AssignmentTabs from "~/components/pages/vehicles/assignment-tabs";
 
 const VehicleAssignment = () => {
     return (

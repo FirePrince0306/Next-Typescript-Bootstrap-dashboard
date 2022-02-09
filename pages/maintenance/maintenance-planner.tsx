@@ -7,7 +7,7 @@ import { AiOutlineCheck, AiOutlineExpandAlt } from 'react-icons/ai';
 import { RiCalendarTodoLine } from 'react-icons/ri';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 
-import MaintenanceVisit from './shared/maintenance-visit';
+import MaintenanceVisit from '~/components/pages/maintenance/maintenance-visit';
 import MaintenanceModal from '~/components/common/maintenance-modal';
 
 const MaintenancePlanner = () => {

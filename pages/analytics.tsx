@@ -6,15 +6,15 @@ import { AiOutlineExpandAlt } from 'react-icons/ai';
 import { RiLayoutFill } from 'react-icons/ri';
 import { HiCreditCard } from 'react-icons/hi';
 
-import RevenueChart from '~/pages/analytics/revenue-chart';
-import ExpensesChart from '~/pages/analytics/expenses-chart';
-import Co2Chart from '~/pages/analytics/co2-chart';
-import TripsChart from '~/pages/analytics/trips-chart';
-import IdleChart from '~/pages/analytics/idle-chart';
-import FuelChart from '~/pages/analytics/fuel-chart';
-import DistanceChart from '~/pages/analytics/distance-chart';
+import RevenueChart from '~/components/pages/analytics/revenue-chart';
+import ExpensesChart from '~/components/pages/analytics/expenses-chart';
+import Co2Chart from '~/components/pages/analytics/co2-chart';
+import TripsChart from '~/components/pages/analytics/trips-chart';
+import IdleChart from '~/components/pages/analytics/idle-chart';
+import FuelChart from '~/components/pages/analytics/fuel-chart';
+import DistanceChart from '~/components/pages/analytics/distance-chart';
 
-const options2 = [
+const options1 = [
     { value: 'all-vehicles', label: 'All Vehicles' },
     { value: 'vehicle1', label: 'Vehicle 1' },
     { value: 'vehicle2', label: 'Vehicle 2' }
@@ -22,7 +22,6 @@ const options2 = [
 
 const Analytics = () => {
     function datePickHandler():void {
-
     }
 
     return (
@@ -34,7 +33,7 @@ const Analytics = () => {
 
                     <Select
                         className="ms-md-3 ps-md-1 me-md-3 me-0 mb-3 mb-md-0 status-basic"
-                        options={options2}
+                        options={options1}
                         isSearchable={true}
                         id="vehicle-selector"
                         instanceId="vehicle-selector"

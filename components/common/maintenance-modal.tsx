@@ -17,14 +17,6 @@ const options2 = [
     { value: 'workshop-b', label: 'Workshop B' }
 ]
 
-const options3 = [
-    { value: '10', label: '10' },
-    { value: '20', label: '20' },
-    { value: '30', label: '30' },
-    { value: '40', label: '40' },
-    { value: '50', label: '50' }
-]
-
 export type MaintenanceProps = {
     modalHandler: () => void;
     state: boolean
@@ -44,7 +36,7 @@ const MaintenanceModal: React.FC<MaintenanceProps> = ({ modalHandler, state }) =
         <>
             <Modal show={state}>
                 <Modal.Header closeButton onClick={() => modalHandler()}>
-                    <Modal.Title className="heading text-basic h6">Schedult Maintenance</Modal.Title>
+                    <Modal.Title className="heading text-basic h6">Schedule Maintenance</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <div className="">

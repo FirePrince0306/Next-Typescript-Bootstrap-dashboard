@@ -1,12 +1,12 @@
 import { BsPlus } from 'react-icons/bs';
 import { AiFillStar } from 'react-icons/ai';
 
-import ConditionChart from '~/pages/vehicles/shared/condition-chart';
-import CommonInformation from '~/pages/vehicles/shared/common-infomation';
-import KeyIndicators from '~/pages/vehicles/shared/key-indicators';
-import DetailsCard from '~/pages/vehicles/shared/details-card';
-import Maintenance from '~/pages/vehicles/shared/maintenance';
-import Trip from '~/pages/vehicles/shared/trip';
+import ConditionChart from '~/components/pages/vehicles/condition-chart';
+import CommonInformation from '~/components/pages/vehicles/common-infomation';
+import KeyIndicators from '~/components/pages/vehicles/key-indicators';
+import DetailsCard from '~/components/pages/vehicles/details-card';
+import Maintenance from '~/components/pages/vehicles/maintenance';
+import Trip from '~/components/pages/vehicles/trip';
 
 const VehicleDetails = () => {
     return (

@@ -1,6 +1,6 @@
 import { BsPlus } from 'react-icons/bs';
 
-import VehicleTabs from "./shared/vehicle-tabs";
+import VehicleTabs from "~/components/pages/vehicles/vehicle-tabs";
 
 const Fleet = () => {
     return (

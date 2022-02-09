@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
-import Indicator from '~/pages/dashboard/shared/indicator';
-import Expenses from '~/pages/dashboard/shared/expenses';
-import VehicleCondition from '~/pages/dashboard/shared/vehicle-condition';
-import TripsChart from '~/pages/dashboard/shared/trips-chart';
-import SafeChart from '~/pages/dashboard/shared/safe-chart';
+import Indicator from '~/components/pages/dashboard/indicator';
+import Expenses from '~/components/pages/dashboard/expenses';
+import VehicleCondition from '~/components/pages/dashboard/vehicle-condition';
+import TripsChart from '~/components/pages/dashboard/trips-chart';
+import SafeChart from '~/components/pages/dashboard/safe-chart';
 
 import { AiOutlineExpandAlt, AiOutlineSetting } from 'react-icons/ai';
 import { RiCalendarTodoLine, RiLayoutFill, RiMapPinFill, RiBroadcastLine } from 'react-icons/ri';

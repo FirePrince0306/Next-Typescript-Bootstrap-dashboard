@@ -10,7 +10,7 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 import { VehiclesService } from '~/components/utils/vehicles.service';
 
-import TripOverviewCard from './shared/trip-overview-card';
+import TripOverviewCard from '~/components/pages/trips/trip-overview-card';
 
 const options1 = [
     { value: '10', label: '10' },

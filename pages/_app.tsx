@@ -8,7 +8,7 @@ import Sidebar from '~/components/common/sidebar';
 
 require('typeface-open-sans');
 import '~/styles/globals.css';
-import '~/styles/custom.scss';
+import '~/styles/custom.scss'; 
 import '~/styles/page.scss';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
